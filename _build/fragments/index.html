@@ -1,6 +1,6 @@
-<main>
+<main id="main" class="home-refined">
   <!-- PHOTO HERO -->
-  <section class="relative hero-depth">
+  <section class="relative hero-depth home-hero">
     <div class="relative min-h-[560px] lg:min-h-[640px] flex items-center overflow-hidden">
       <div class="hero-planes"><div class="hero-plane"><img fetchpriority="high" src="assets/hero-room-bg.jpg" alt="Φωτεινός χώρος θεραπείας για παιδιά στη ΣΥΝΟΙΔΑ" /></div><div class="hero-fg" aria-hidden="true"><img fetchpriority="high" src="assets/hero-room-fg.webp" alt="" /></div></div>
       <div class="absolute inset-0 hero-scrim"></div>
@@ -13,37 +13,37 @@
         </div>
         <div class="mt-8 flex flex-wrap items-center gap-4">
           <a href="#preview-centres" class="inline-flex items-center gap-2 rounded-full border border-white/50 text-white px-7 py-3.5 font-semibold hover:bg-white/10 transition">Μιλήστε μαζί μας <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <a href="#preview-first-steps" class="preview-hero-secondary">Πώς ξεκινάμε <span aria-hidden="true">↓</span></a>
+          <a href="#preview-first-steps" class="preview-hero-secondary">Πώς ξεκινάμε</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- VALUE PROPS -->
-  <section class="bg-white">
-    <div class="relative z-10 -mt-20 sm:-mt-24 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 lg:pb-24">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="reveal rounded-2xl bg-white ring-1 ring-grey/10 shadow-soft p-8 flex items-center gap-5">
+  <section class="bg-white home-values">
+    <div class="home-values-wrap">
+      <div class="home-values-grid">
+        <div class="reveal home-value">
           <img loading="lazy" decoding="async" src="assets/vp-companion.png" alt="" class="w-20 h-20 shrink-0 object-contain" />
           <div class="preview-value-copy"><h2>Ακούμε την οικογένεια</h2><p>Οι παρατηρήσεις και οι ανησυχίες σας μάς βοηθούν να γνωρίσουμε καλύτερα το παιδί.</p></div>
         </div>
-        <div class="reveal d1 rounded-2xl bg-white ring-1 ring-grey/10 shadow-soft p-8 flex items-center gap-5">
+        <div class="reveal home-value d1">
           <img loading="lazy" decoding="async" src="assets/vp-team.png" alt="" class="w-20 h-20 shrink-0 object-contain" />
           <div class="preview-value-copy"><h2>Συνεργαζόμαστε ως ομάδα</h2><p>Οι ειδικότητες συνδυάζουν τη γνώση τους γύρω από τις ανάγκες του παιδιού.</p></div>
         </div>
-        <div class="reveal d2 rounded-2xl bg-white ring-1 ring-grey/10 shadow-soft p-8 flex items-center gap-5">
+        <div class="reveal home-value d2">
           <img loading="lazy" decoding="async" src="assets/vp-innovation.png" alt="" class="w-20 h-20 shrink-0 object-contain" />
           <div class="preview-value-copy"><h2>Προσαρμόζουμε τη δουλειά μας</h2><p>Επιλέγουμε δραστηριότητες που ταιριάζουν στις δυνατότητες και τα ενδιαφέροντα του παιδιού.</p></div>
         </div>
-        <div class="reveal rounded-2xl bg-white ring-1 ring-grey/10 shadow-soft p-8 flex items-center gap-5">
+        <div class="reveal home-value">
           <img loading="lazy" decoding="async" src="assets/vp-certification.png" alt="" class="w-20 h-20 shrink-0 object-contain" />
           <div class="preview-value-copy"><h2>Ξεκινάμε από την αξιολόγηση</h2><p>Διερευνούμε τις ανάγκες του παιδιού πριν προτείνουμε πρόγραμμα υποστήριξης.</p></div>
         </div>
-        <div class="reveal d1 rounded-2xl bg-white ring-1 ring-grey/10 shadow-soft p-8 flex items-center gap-5">
+        <div class="reveal home-value d1">
           <img loading="lazy" decoding="async" src="assets/vp-empathy.png" alt="" class="w-20 h-20 shrink-0 object-contain" />
           <div class="preview-value-copy"><h2>Σεβόμαστε τον ρυθμό του παιδιού</h2><p>Γνωρίζουμε το παιδί και δίνουμε χώρο σε όσα το διευκολύνουν να συμμετέχει.</p></div>
         </div>
-        <div class="reveal d2 rounded-2xl bg-white ring-1 ring-grey/10 shadow-soft p-8 flex items-center gap-5">
+        <div class="reveal home-value d2">
           <img loading="lazy" decoding="async" src="assets/vp-goals.png" alt="" class="w-20 h-20 shrink-0 object-contain" />
           <div class="preview-value-copy"><h2>Στόχοι για την καθημερινότητα</h2><p>Σχεδιάζουμε την υποστήριξη με βάση όσα χρειάζεται στο σπίτι, στο σχολείο και στο παιχνίδι.</p></div>
         </div>
@@ -52,11 +52,12 @@
   </section>
 
   <!-- ABOUT TEASER -->
-  <section class="py-16 lg:py-24 bg-mist">
+  <section class="py-16 lg:py-24 bg-mist home-about">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-[1.4fr_1fr] gap-12 lg:gap-16 items-center">
       <div class="reveal relative">
         <div class="absolute -inset-4 -z-10 rounded-[2.5rem] bg-green/10"></div>
         <img loading="lazy" decoding="async" src="assets/about-storefront.jpg" alt="Η πρόσοψη του κέντρου ειδικών θεραπειών ΣΥΝΟΙΔΑ" class="frame shadow-card w-full object-cover aspect-square" />
+        <figure class="home-photo-detail"><img src="assets/about-welcome.jpg" width="1280" height="853" loading="lazy" decoding="async" alt="Κουζίνα και εξοπλισμός καθημερινών δραστηριοτήτων στον χώρο της ΣΥΝΟΙΔΑ" /><figcaption>Μικρά βήματα, στην πραγματική ζωή.</figcaption></figure>
       </div>
       <div class="reveal d1">
         <p class="kicker text-green text-xs mb-3">Σχετικά με μας</p>
@@ -91,16 +92,16 @@
     </div>
   </section>
 
-  <section class="preview-section preview-question">
+  <section class="preview-section preview-question home-question">
     <div class="preview-container reveal">
-      <h2>Σας προβληματίζει κάτι στην καθημερινότητα του παιδιού σας;</h2>
+      <h2>Σας προβληματίζει κάτι <span>στην καθημερινότητα του παιδιού σας;</span></h2>
       <div class="preview-question-body"><p>Ίσως δυσκολεύεται να επικοινωνήσει, να συμμετέχει στο παιχνίδι, να ανταποκριθεί στις απαιτήσεις του σχολείου ή να διαχειριστεί όσα νιώθει.</p><p>Δεν χρειάζεται να γνωρίζετε ποια ειδικότητα να επιλέξετε. Πείτε μας τι παρατηρείτε, για να συζητήσουμε από πού μπορούμε να ξεκινήσουμε.</p>
       <a class="preview-button" href="#preview-centres">Συζητήστε μαζί μας <span aria-hidden="true">→</span></a></div>
     </div>
   </section>
 
   <!-- SERVICES PREVIEW -->
-  <section class="svc-pin bg-white">
+  <section class="svc-pin bg-white home-services">
     <div class="svc-stage py-16 lg:py-24">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="reveal svc-intro">
@@ -170,6 +171,18 @@
     </div>
   </section>
 
+  <!-- CTA BAND -->
+  <section id="logo-reveal" class="relative bg-mist overflow-hidden logo-story">
+    <div class="pointer-events-none absolute -bottom-20 -left-16 w-80 h-80 rounded-full bg-blue/10 blur-2xl"></div>
+    <div class="cta-mark" aria-hidden="true"><span class="orb orb-g"></span><span class="orb orb-r"></span><span class="orb orb-b"></span><span class="orb orb-o"></span><img src="assets/logo-stacked-light.png" alt="" width="420" height="279" loading="lazy" decoding="async" /></div>
+    <div class="reveal logo-story-copy">
+      <h2 class="font-display font-bold text-ink text-3xl sm:text-4xl leading-tight">Ας συζητήσουμε <span class="text-green">όσα σας απασχολούν</span></h2>
+      <p class="mt-4 text-[17px] text-ink/85">Είμαστε εδώ για να σας ακούσουμε και να σας εξηγήσουμε πώς μπορούμε να βοηθήσουμε το παιδί και την οικογένειά σας.</p>
+      <div class="mt-8"><a href="#preview-centres" class="inline-flex items-center gap-2 rounded-full bg-green px-8 py-4 text-grey text-lg font-bold shadow-soft hover:bg-[#7CB22E] transition">Μιλήστε μαζί μας <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+      <p class="mt-5"><a href="about-us.html#pos-xekiname" class="inline-flex items-center gap-2 text-grey font-semibold hover:text-green transition">Δείτε πώς ξεκινάμε <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+    </div>
+  </section>
+
   <section id="preview-first-steps" class="preview-section">
     <div class="preview-container"><div class="reveal preview-section-title"><p class="kicker text-green text-xs">Το πρώτο βήμα</p><h2>Πώς ξεκινάμε</h2></div>
       <ol class="preview-steps"><li class="reveal"><span class="preview-step-number">01</span><h3>Συζητάμε μαζί σας</h3><p>Ακούμε όσα σας απασχολούν και σας εξηγούμε τα επόμενα βήματα.</p></li><li class="reveal"><span class="preview-step-number">02</span><h3>Γνωρίζουμε το παιδί</h3><p>Μέσα από την αξιολόγηση, διερευνούμε τις δυνατότητες και τις ανάγκες του.</p></li><li class="reveal"><span class="preview-step-number">03</span><h3>Σχεδιάζουμε την υποστήριξη</h3><p>Συζητάμε μαζί σας τα ευρήματα και προτείνουμε στόχους και πρόγραμμα που ταιριάζουν στο παιδί.</p></li></ol>
@@ -183,15 +196,5 @@
     </div>
   </section>
 
-  <!-- CTA BAND -->
-  <section class="relative bg-mist overflow-hidden">
-    <div class="pointer-events-none absolute -bottom-20 -left-16 w-80 h-80 rounded-full bg-blue/10 blur-2xl"></div>
-    <div class="cta-mark" aria-hidden="true"><span class="orb orb-g"></span><span class="orb orb-r"></span><span class="orb orb-b"></span><span class="orb orb-o"></span><img src="assets/logo-stacked-light.png" alt="" width="420" height="279" loading="lazy" decoding="async" /></div>
-    <div class="reveal relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20 text-center">
-      <h2 class="font-display font-bold text-ink text-3xl sm:text-4xl leading-tight">Ας συζητήσουμε <span class="text-green">όσα σας απασχολούν</span></h2>
-      <p class="mt-4 text-[17px] text-ink/85">Είμαστε εδώ για να σας ακούσουμε και να σας εξηγήσουμε πώς μπορούμε να βοηθήσουμε το παιδί και την οικογένειά σας.</p>
-      <div class="mt-8"><a href="#preview-centres" class="inline-flex items-center gap-2 rounded-full bg-green px-8 py-4 text-grey text-lg font-bold shadow-soft hover:bg-[#7CB22E] transition">Μιλήστε μαζί μας <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
-      <p class="mt-5"><a href="about-us.html#pos-xekiname" class="inline-flex items-center gap-2 text-grey font-semibold hover:text-green transition">Δείτε πώς ξεκινάμε <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
-    </div>
-  </section>
+
 </main>
