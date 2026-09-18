@@ -65,6 +65,9 @@ for outfile, (title, desc, page) in PAGES.items():
            .replace('{{OGIMG}}', ogimg)
            .replace('{{MAIN}}', main))
     out = out.replace('<!doctype html>', '<!doctype html>\n' + MARKER, 1)
+    if outfile == 'index.html':
+        # Approved logo particle effect belongs only to the homepage.
+        out = out.replace('</body>', '  <script src="assets/stars-mark.js" defer></script>\n</body>', 1)
     if outfile == '404.html':
         # το 404 σερβίρεται από το GitHub Pages σε οποιοδήποτε path — τα σχετικά links θέλουν σταθερή βάση
         out = out.replace('<head>', '<head>\n  <base href="%s" />' % BASE_URL, 1)

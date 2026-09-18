@@ -32,3 +32,7 @@
 @media(max-width:1023px){.preview-centres{grid-template-columns:repeat(2,minmax(0,1fr))}.preview-question .preview-container{gap:32px}.preview-hero-copy{font-size:15px;max-width:560px}}
 @media(max-width:639px){.preview-container{padding:0 20px}.preview-section{padding:52px 0}.preview-question .preview-container,.preview-steps,.preview-centres{grid-template-columns:1fr}.preview-question .preview-container{gap:8px}.preview-steps{gap:24px}.preview-centre p{min-height:0}.preview-section h2{font-size:25px}.preview-hero-copy{font-size:14px;line-height:1.65;max-width:95%}.hero-depth .whitespace-nowrap{white-space:normal}.preview-value-copy h2{font-size:17px}.preview-status{font-size:10px;right:8px;bottom:8px}.preview-centre{padding:24px}.preview-hero-secondary{font-size:14px}}
 @media print{.preview-status{display:none}}
+/* Approved stars-to-logo effect. Original orbs remain the fallback. */
+.starfield{position:absolute;left:0;top:0;z-index:40;pointer-events:none}
+.stars-on .cta-mark .orb{display:none}
+.stars-on .cta-mark img{opacity:0;transform:none}
