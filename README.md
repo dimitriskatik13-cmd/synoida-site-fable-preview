@@ -1,38 +1,23 @@
-# Σύνοιδα — Demo Site
+# ΣΥΝΟΙΔΑ · Δοκιμαστικό site
 
-Στατικό website (HTML + Tailwind ενσωματωμένο τοπικά). **Δεν χρειάζεται build ή server** για να τρέξει — απλά static αρχεία.
+Ανεξάρτητο αντίγραφο για οπτική και πρακτική αξιολόγηση προτάσεων, μία σελίδα κάθε φορά.
 
-## Τοπική προβολή
-Άνοιξε το `index.html` στον browser, ή σέρβιρέ το τοπικά:
-```bash
-python3 -m http.server 8000
-# → http://localhost:8000
+- [Δοκιμαστική έκδοση](https://dimitriskatik13-cmd.github.io/synoida-site-preview/)
+- [Αρχική έκδοση, χωρίς αλλαγές](https://dimitriskatik13-cmd.github.io/synoida-site/)
+
+Πρώτη δοκιμή: νέο κείμενο Αρχικής, σαφέστερη πρώτη επικοινωνία, βήματα έναρξης και επιλογή κέντρου. Οι εικόνες, οι γραμματοσειρές και ο αρχικός κώδικας εφέ κύλισης διατηρούνται. Η πρόσθετη κάρτα παιγνιοθεραπείας χρησιμοποιεί εικόνα που υπήρχε ήδη στο site. Οι υπόλοιπες σελίδες διατηρούν το περιεχόμενό τους.
+
+Βάση αντιγραφής: `dimitriskatik13-cmd/synoida-site`, commit `2b8735f901dd1f4c51741786c489cbe0a6a03db2`. Το repository αυτό δεν δημοσιεύει αλλαγές στο αρχικό repository ή στο synoida.gr. Παραμένει εκτός ευρετηρίασης με `noindex`.
+
+## Επεξεργασία
+
+Η πηγή κάθε σελίδας είναι το `_build/fragments/` και το κοινό κέλυφος το `_build/template.html`. Οι αλλαγές διάταξης της δοκιμής είναι στο `assets/preview.css`. Τα υπάρχοντα `assets/site.css`, αρχεία εικόνων και scripts κύλισης παραμένουν ίδια με την αρχική έκδοση.
+
+```sh
+python3 _build/build.py --keep-css
+python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
-## Δημοσίευση σε GitHub Pages
+Η σημαία `--keep-css` κρατά το αρχικό στατικό CSS. Για νέες ενότητες χρησιμοποιούνται δικές τους κλάσεις στο `preview.css`, όχι νέες μη παραγμένες κλάσεις Tailwind.
 
-**Επιλογή Α — μέσω terminal (git):**
-1. Φτιάξε ένα νέο **public** repo στο https://github.com/new (π.χ. `synoida-site`) — χωρίς README/.gitignore.
-2. Από αυτόν τον φάκελο:
-   ```bash
-   git remote add origin https://github.com/<USERNAME>/synoida-site.git
-   git push -u origin main
-   ```
-3. Στο repo: **Settings → Pages → Source: Deploy from a branch → Branch: `main` / `(root)` → Save**.
-4. Σε ~1 λεπτό θα είναι live στο: `https://<USERNAME>.github.io/synoida-site/`
-
-**Επιλογή Β — χωρίς terminal (web upload):**
-1. Νέο public repo στο github.com.
-2. **Add file → Upload files** → σύρε ΟΛΑ τα περιεχόμενα αυτού του φακέλου → **Commit**.
-3. Ίδιο βήμα 3 & 4 με πάνω (Settings → Pages).
-
-## Δομή φακέλου
-- `*.html` — οι 13 σελίδες (το live site)
-- `assets/` — εικόνες, λογότυπα, και το Tailwind (vendored, για offline λειτουργία)
-- `_build/` — το σύστημα παραγωγής: `template.html` (κοινό κέλυφος) + `fragments/` (το `<main>` κάθε σελίδας) + `build.py`. Τρέξε `python3 _build/build.py` για να ξαναχτιστούν οι σελίδες μετά από αλλαγή.
-- `reference-pages/` — το πραγματικό κείμενο κάθε σελίδας (τραβηγμένο από το synoida.gr)
-
-## Σημειώσεις για τον developer
-- Παλέτα/τυπογραφία/components ορίζονται μία φορά στο `_build/template.html` (Tailwind config + brand tokens: green `#8DC63F`, red `#ED1C24`, blue `#00AEEF`, orange `#F7941D`, grey `#58595B`). Comfortaa (τίτλοι) + Inter (κείμενο).
-- Όλα τα links είναι **relative**, οπότε δουλεύει και σε subpath (`/synoida-site/`).
-- Το κείμενο είναι το πραγματικό περιεχόμενο του synoida.gr.
+Η δημοσίευση γίνεται από το `main`, root, στο GitHub Pages αυτού του repository. Κάθε αλλαγή αξιολογείται πρώτα εδώ. Η μεταφορά στην κύρια έκδοση αποτελεί χωριστή απόφαση.

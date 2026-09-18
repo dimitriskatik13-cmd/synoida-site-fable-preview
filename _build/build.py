@@ -10,15 +10,15 @@ ROOT = os.path.dirname(HERE)                      # example/
 TEMPLATE = open(os.path.join(HERE, 'template.html'), encoding='utf-8').read()
 FRAG = os.path.join(HERE, 'fragments')
 
-BASE_URL = 'https://dimitriskatik13-cmd.github.io/synoida-site/'
+BASE_URL = 'https://dimitriskatik13-cmd.github.io/synoida-site-preview/'
 DEFAULT_OG = 'assets/hero-room.jpg'
 MARKER = ('<!-- ΠΑΡΑΓΕΤΑΙ ΑΥΤΟΜΑΤΑ από _build/build.py — μην επεξεργάζεσαι αυτό το αρχείο. '
           'Άλλαξε το _build/fragments/<σελίδα>.html ή το _build/template.html και τρέξε: python3 _build/build.py -->')
 
 # outfile : (title, description, data-page)
 PAGES = {
- 'index.html':                 ('Σύνοιδα — Κέντρα Ειδικών Θεραπειών | Σπάτα, Αρτέμιδα, Νέα Μάκρη, Μαραθώνας',
-                                'Κέντρα Ειδικών Θεραπειών ΣΥΝΟΙΔΑ σε Σπάτα, Αρτέμιδα, Νέα Μάκρη και Μαραθώνα. 29 χρόνια δίπλα στο παιδί και την οικογένεια με επιστημονικότητα και ενσυναίσθηση.', 'home'),
+ 'index.html':                 ('ΣΥΝΟΙΔΑ | Κέντρα Ειδικών Θεραπειών στην Ανατολική Αττική',
+                                'Λογοθεραπεία, εργοθεραπεία και ειδικές θεραπείες για παιδιά και εφήβους σε Αρτέμιδα, Σπάτα, Νέα Μάκρη και Μαραθώνα. Γνωρίστε τη ΣΥΝΟΙΔΑ και πώς ξεκινάμε.', 'home'),
  'about-us.html':              ('Σχετικά με μας - Σύνοιδα',
                                 'Γνωρίστε τη ΣΥΝΟΙΔΑ: 29 χρόνια ιστορίας, διεπιστημονική ομάδα και 4 κέντρα ειδικών θεραπειών δίπλα στο παιδί και την οικογένεια στην Ανατολική Αττική.', 'about'),
  'rating.html':                ('Αξιολόγηση - Σύνοιδα',
@@ -78,11 +78,13 @@ print('BUILT', len(built), 'pages:', ', '.join(built))
 
 # αναγέννηση στατικού CSS από τις built σελίδες
 import subprocess
-r = subprocess.run([sys.executable, os.path.join(HERE, 'gen_css.py')], capture_output=True, text=True)
-print(r.stdout.strip() or r.stderr.strip())
-if r.returncode != 0:
-    sys.exit('gen_css.py failed — το assets/site.css ΔΕΝ ανανεώθηκε')
-
+if '--keep-css' in sys.argv:
+    print('Preserved baseline assets/site.css; preview additions are in assets/preview.css')
+else:
+    r = subprocess.run([sys.executable, os.path.join(HERE, 'gen_css.py')], capture_output=True, text=True)
+    print(r.stdout.strip() or r.stderr.strip())
+    if r.returncode != 0:
+        sys.exit('gen_css.py failed — το assets/site.css ΔΕΝ ανανεώθηκε')
 
 # έλεγχοι συνέπειας: orphan fragments / stale outputs
 orphans = sorted(set(f for f in os.listdir(FRAG) if f.endswith('.html')) - set(PAGES))

@@ -27,6 +27,7 @@
 
   <!-- Tailwind: προ-παραγμένο στατικό CSS (από _build/gen_css.py — χωρίς runtime JS) -->
   <link rel="stylesheet" href="assets/site.css" />
+  <link rel="stylesheet" href="assets/preview.css" />
 
   <style>
     html { scroll-behavior: smooth; }
@@ -366,5 +367,6 @@
         counters.forEach(function(c){ c.textContent='0'; cio.observe(c); }); }
     })();
   </script>
+<aside class="preview-status" aria-label="Δοκιμαστική έκδοση">Δοκιμαστική έκδοση <span aria-hidden="true">·</span> <a href="https://dimitriskatik13-cmd.github.io/synoida-site/" target="_blank" rel="noopener">Αρχικό site ↗</a></aside>
 </body>
 </html>

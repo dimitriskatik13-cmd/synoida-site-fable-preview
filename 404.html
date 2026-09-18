@@ -2,7 +2,7 @@
 <!-- ΠΑΡΑΓΕΤΑΙ ΑΥΤΟΜΑΤΑ από _build/build.py — μην επεξεργάζεσαι αυτό το αρχείο. Άλλαξε το _build/fragments/<σελίδα>.html ή το _build/template.html και τρέξε: python3 _build/build.py -->
 <html lang="el">
 <head>
-  <base href="https://dimitriskatik13-cmd.github.io/synoida-site/" />
+  <base href="https://dimitriskatik13-cmd.github.io/synoida-site-preview/" />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Η σελίδα δεν βρέθηκε - Σύνοιδα</title>
@@ -10,14 +10,14 @@
   <script>document.documentElement.classList.add('js');</script>
   <!-- demo deployment: εκτός ευρετηρίασης -->
   <meta name="robots" content="noindex, nofollow" />
-  <link rel="canonical" href="https://dimitriskatik13-cmd.github.io/synoida-site/404.html" />
+  <link rel="canonical" href="https://dimitriskatik13-cmd.github.io/synoida-site-preview/404.html" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Σύνοιδα" />
   <meta property="og:locale" content="el_GR" />
   <meta property="og:title" content="Η σελίδα δεν βρέθηκε - Σύνοιδα" />
   <meta property="og:description" content="Η σελίδα που ζητήσατε δεν βρέθηκε. Επιστρέψτε στην αρχική σελίδα της ΣΥΝΟΙΔΑ ή δείτε τις θεραπείες μας." />
-  <meta property="og:url" content="https://dimitriskatik13-cmd.github.io/synoida-site/404.html" />
-  <meta property="og:image" content="https://dimitriskatik13-cmd.github.io/synoida-site/assets/hero-room.jpg" />
+  <meta property="og:url" content="https://dimitriskatik13-cmd.github.io/synoida-site-preview/404.html" />
+  <meta property="og:image" content="https://dimitriskatik13-cmd.github.io/synoida-site-preview/assets/hero-room.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png" />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
@@ -29,6 +29,7 @@
 
   <!-- Tailwind: προ-παραγμένο στατικό CSS (από _build/gen_css.py — χωρίς runtime JS) -->
   <link rel="stylesheet" href="assets/site.css" />
+  <link rel="stylesheet" href="assets/preview.css" />
 
   <style>
     html { scroll-behavior: smooth; }
@@ -382,5 +383,6 @@
         counters.forEach(function(c){ c.textContent='0'; cio.observe(c); }); }
     })();
   </script>
+<aside class="preview-status" aria-label="Δοκιμαστική έκδοση">Δοκιμαστική έκδοση <span aria-hidden="true">·</span> <a href="https://dimitriskatik13-cmd.github.io/synoida-site/" target="_blank" rel="noopener">Αρχικό site ↗</a></aside>
 </body>
 </html>
