@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Αξιολόγηση - Σύνοιδα</title>
-  <meta name="description" content="Η αξιολόγηση στη ΣΥΝΟΙΔΑ σηματοδοτεί την έναρξη της θεραπευτικής διαδικασίας: σταθμισμένες κλίμακες, πλήρες ιστορικό και εξατομικευμένο πλάνο στόχων." />
+  <title>Αξιολόγηση παιδιού | Πρώτα βήματα στη ΣΥΝΟΙΔΑ</title>
+  <meta name="description" content="Πώς γίνεται η αξιολόγηση στη ΣΥΝΟΙΔΑ: πρώτη συνάντηση με τον γονέα, γνωριμία με το παιδί, συζήτηση των ευρημάτων και σχεδιασμός της υποστήριξης." />
   <script>document.documentElement.classList.add('js');</script>
   <!-- demo deployment: εκτός ευρετηρίασης -->
   <meta name="robots" content="noindex, nofollow" />
@@ -13,8 +13,8 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Σύνοιδα" />
   <meta property="og:locale" content="el_GR" />
-  <meta property="og:title" content="Αξιολόγηση - Σύνοιδα" />
-  <meta property="og:description" content="Η αξιολόγηση στη ΣΥΝΟΙΔΑ σηματοδοτεί την έναρξη της θεραπευτικής διαδικασίας: σταθμισμένες κλίμακες, πλήρες ιστορικό και εξατομικευμένο πλάνο στόχων." />
+  <meta property="og:title" content="Αξιολόγηση παιδιού | Πρώτα βήματα στη ΣΥΝΟΙΔΑ" />
+  <meta property="og:description" content="Πώς γίνεται η αξιολόγηση στη ΣΥΝΟΙΔΑ: πρώτη συνάντηση με τον γονέα, γνωριμία με το παιδί, συζήτηση των ευρημάτων και σχεδιασμός της υποστήριξης." />
   <meta property="og:url" content="https://dimitriskatik13-cmd.github.io/synoida-site-preview/rating.html" />
   <meta property="og:image" content="https://dimitriskatik13-cmd.github.io/synoida-site-preview/assets/rating-hero.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -28,7 +28,7 @@
 
   <!-- Tailwind: προ-παραγμένο στατικό CSS (από _build/gen_css.py — χωρίς runtime JS) -->
   <link rel="stylesheet" href="assets/site.css" />
-  <link rel="stylesheet" href="assets/preview.css?v=6790014771aa" />
+  <link rel="stylesheet" href="assets/preview.css?v=00c956a44f1c" />
 
   <style>
     html { scroll-behavior: smooth; }
@@ -253,81 +253,71 @@
     </nav>
   </header>
 
-<main id="main">
-  <section class="relative">
+<main id="main" class="assessment-refined">
+  <section class="relative assessment-hero">
     <div class="relative min-h-[360px] lg:min-h-[440px] flex items-end overflow-hidden">
-      <img fetchpriority="high" src="assets/rating-hero.jpg" alt="Παιδί κατά τη διάρκεια αξιολόγησης σε κέντρο ειδικών θεραπειών ΣΥΝΟΙΔΑ" class="absolute inset-0 w-full h-full object-cover" />
+      <img fetchpriority="high" src="assets/rating-hero.jpg" alt="Φωτεινός χώρος αξιολόγησης και θεραπευτικών δραστηριοτήτων στη ΣΥΝΟΙΔΑ" class="absolute inset-0 w-full h-full object-cover" />
       <div class="absolute inset-0 hero-scrim-b"></div>
       <div class="reveal relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full pb-12 pt-28">
         <nav aria-label="Breadcrumb" class="flex items-center gap-2 text-sm text-white/85 mb-4"><a href="index.html" class="hover:text-white">Αρχική</a><span aria-hidden="true">/</span><span class="text-white font-semibold" aria-current="page">Αξιολόγηση</span></nav>
-        <p class="kicker text-white/80 text-xs mb-3">Η διαδικασία</p>
-        <h1 class="font-display font-bold text-white text-4xl sm:text-5xl lg:text-6xl leading-[1.1] max-w-3xl">Αξιολόγηση</h1>
+        <h1 class="font-display font-bold text-white text-4xl sm:text-5xl lg:text-6xl leading-[1.1] max-w-3xl">Αξιολόγηση παιδιού</h1>
+        <p class="assessment-hero-copy">Κατανοούμε τις ανάγκες του παιδιού και σχεδιάζουμε μαζί τα επόμενα βήματα.</p>
       </div>
     </div>
   </section>
 
-  <section class="py-16 lg:py-24 bg-white">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-[1.4fr_1fr] gap-12 lg:gap-16 items-center">
-      <div class="reveal relative">
-        <div class="absolute -inset-4 -z-10 rounded-[2.5rem] bg-blue/10"></div>
-        <img loading="lazy" decoding="async" src="assets/rating-materials.jpg" alt="Σταθμισμένες κλίμακες και εργαλεία αξιολόγησης παιδιών στα κέντρα ΣΥΝΟΙΔΑ" class="frame shadow-card w-full object-cover aspect-square" />
+  <section class="assessment-section assessment-intro">
+    <div class="assessment-wrap assessment-split">
+      <div class="reveal assessment-intro-copy">
+        <h2>Πρώτα ακούμε εσάς.<br><span>Έπειτα γνωρίζουμε το παιδί.</span></h2>
+        <p>Η θεραπευτική αξιολόγηση μάς βοηθά να κατανοήσουμε τις δυνατότητες του παιδιού, τις δυσκολίες που αντιμετωπίζει και όσα είναι σημαντικά για την οικογένεια.</p>
+        <p class="assessment-parent-note"><strong>Η πρώτη συνάντηση γίνεται μόνο με τον γονέα.</strong> Ακούμε τους προβληματισμούς σας, συζητάμε το ιστορικό και την καθημερινότητα του παιδιού και οργανώνουμε τα επόμενα βήματα.</p>
+        <p>Οι δικές σας παρατηρήσεις είναι ουσιαστικό μέρος της διαδικασίας.</p>
+        <a class="assessment-button" href="contact-us.html#contact-centres">Μιλήστε μαζί μας <span aria-hidden="true">→</span></a>
       </div>
-      <div class="reveal d1">
-        <p class="kicker text-blue text-xs mb-3">Η διαδικασία</p>
-        <h2 class="font-display font-bold text-ink text-3xl sm:text-4xl leading-tight">Η αξιολόγηση σηματοδοτεί την έναρξη της <span class="text-blue">αποκαταστασιακής διαδικασίας</span></h2>
-        <div class="prose-syn mt-5 text-[16px] text-ink/85">
-          <p>καθορίζοντας το εξατομικευμένο πλάνο δράσης και τη στοχοθεσία που αναπροσαρμόζεται σε τακτά χρονικά διαστήματα</p>
-          <p>Ο θεραπευτής που αναλαμβάνει το παιδί προβαίνει σε ενδελεχή αξιολόγηση ώστε να καταγραφούν λεπτομερώς οι αδυναμίες και σε συνδυασμό με το αίτημα των γονέων να τεθούν οι στόχοι ώστε να ξεκινήσει η παρέμβαση. Για να αποζημιώνονται οι γονείς από το ταμείο τους, θα πρέπει να υπάρξει γνωμάτευση από πιστοποιημένο ιατρό.</p>
-          <p>Η συνήθης διαδικασία που ακολουθείται στην Ελλάδα για τη διάγνωση είναι η επίσκεψη ή σε δημόσιο νοσοκομείο όπου στεγάζεται διαγνωστική μονάδα ψυχικής υγείας παιδικής και εφηβικής ηλικίας ή σε αναπτυξιολόγο ή παιδοψυχίατρο στον οποίο παραπέμπονται τα παιδιά είτε από τον παιδίατρο ο οποίος ανιχνεύει τα πρώτα συμπτώματα της διαταραχής είτε από τον θεραπευτή στον οποίο έχουν απευθυνθεί οι γονείς αντιλαμβανόμενοι δυσκολίες σε κάποιον τομέα της ανάπτυξης του παιδιού. Πολύ συχνά, ο ίδιος ο γονέας οσφραίνεται την απόκλιση από τα αναπτυξιακά ορόσημα και απευθύνεται στον ειδικό για να λάβει απάντηση σχετικά με τους προβληματισμούς του.</p>
-        </div>
-        <div class="mt-8">
-          <a href="treatments.html" class="inline-flex items-center gap-2 rounded-full bg-grey px-7 py-3.5 text-white font-semibold shadow-soft hover:bg-grey/90 transition">Οι θεραπείες μας <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        </div>
+      <figure class="reveal assessment-photo"><img src="assets/rating-materials.jpg" width="1280" height="853" loading="lazy" decoding="async" alt="Υλικό αξιολόγησης WISC-V σε γραφείο της ΣΥΝΟΙΔΑ" /><figcaption>Συζήτηση, παρατήρηση και κατάλληλα εργαλεία αξιολόγησης.</figcaption></figure>
+    </div>
+  </section>
+
+  <section id="assessment-process" class="assessment-section assessment-process">
+    <div class="assessment-wrap">
+      <div class="reveal assessment-section-heading"><h2>Η διαδικασία, βήμα βήμα</h2><p>Από τη δική σας εικόνα μέχρι το πλάνο υποστήριξης.</p></div>
+      <div class="assessment-process-layout">
+        <ol class="assessment-steps">
+          <li class="reveal"><span class="assessment-step-number" aria-hidden="true">01</span><div><h3>Συζητάμε όσα σας απασχολούν</h3><p>Στην πρώτη συνάντηση, χωρίς το παιδί, γνωρίζουμε το αίτημά σας και συγκεντρώνουμε πληροφορίες για την ανάπτυξη, την καθημερινότητα και τις εμπειρίες του.</p></div></li>
+          <li class="reveal"><span class="assessment-step-number" aria-hidden="true">02</span><div><h3>Αξιολογούμε το παιδί</h3><p>Ακολουθεί η γνωριμία με το παιδί. Ανάλογα με την ηλικία και το αίτημα, αξιοποιούμε παρατήρηση, δραστηριότητες και κατάλληλες δοκιμασίες για τους τομείς που χρειάζεται να διερευνήσουμε.</p></div></li>
+          <li class="reveal"><span class="assessment-step-number" aria-hidden="true">03</span><div><h3>Σας εξηγούμε τα ευρήματα</h3><p>Συζητάμε μαζί σας την εικόνα που διαμορφώθηκε, τι διευκολύνει το παιδί και πού χρειάζεται υποστήριξη. Υπάρχει χώρος για τις δικές σας ερωτήσεις και παρατηρήσεις.</p></div></li>
+          <li class="reveal"><span class="assessment-step-number" aria-hidden="true">04</span><div><h3>Σχεδιάζουμε τα επόμενα βήματα</h3><p>Με βάση τα ευρήματα και τις προτεραιότητες της οικογένειας, προτείνουμε στόχους και κατάλληλο πρόγραμμα υποστήριξης. Οι στόχοι επανεξετάζονται στην πορεία.</p></div></li>
+        </ol>
+        <figure class="reveal assessment-photo assessment-process-photo"><img src="assets/rating-process.jpg" width="1280" height="853" loading="lazy" decoding="async" alt="Εγχειρίδια και υλικά του Movement ABC-2 σε γραφείο της ΣΥΝΟΙΔΑ" /><figcaption>Τα μέσα αξιολόγησης επιλέγονται με βάση την ηλικία και το αίτημα.</figcaption></figure>
       </div>
     </div>
   </section>
 
-  <section class="py-16 lg:py-24 bg-mist">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-[1fr_1.4fr] gap-12 lg:gap-16 items-center">
-      <div class="reveal relative lg:order-last">
-        <div class="absolute -inset-4 -z-10 rounded-[2.5rem] bg-blue/10"></div>
-        <img loading="lazy" decoding="async" src="assets/rating-process.jpg" alt="Θεραπευτής αξιολογεί παιδί μέσα από δομημένη διαδικασία στη ΣΥΝΟΙΔΑ" class="frame shadow-card w-full object-cover aspect-square" />
-      </div>
-      <div class="reveal d1">
-        <p class="kicker text-blue text-xs mb-3">Τα μέσα αξιολόγησής μας</p>
-        <h2 class="font-display font-bold text-ink text-3xl sm:text-4xl leading-tight">Αφού ολοκληρωθεί η διαδικασία της <span class="text-blue">διάγνωσης</span></h2>
-        <div class="prose-syn mt-5 text-[16px] text-ink/85">
-          <p>ο γονέας απευθύνεται στον θεραπευτή που θα επιλέξει ώστε να ξεκινήσει το πρόγραμμα αποκατάστασης. Ο λογοθεραπευτής/ εργοθεραπευτής/ψυχολόγος πριν αναλάβει ένα παιδί για παρέμβαση, θα πρέπει αρχικά να το αξιολογήσει ώστε να λάβει υπ' όψιν του όλες τις παραμέτρους πριν προτείνει το κατάλληλο πρόγραμμα παρέμβασης. Στη φαρέτρα του, διαθέτει διάφορα μέσα αξιολόγησης, ο συνδυασμός των οποίων οδηγεί στη στοχοθεσία. Αρχικά, θα ζητήσει αναλυτικό ιστορικό από τους γονείς ώστε να σχηματίσει μία εικόνα των αναπτυξιακών οροσήμων και των αποκλίσεων. Στη συνέχεια, μπορεί να προβεί σε:</p>
-          <p><strong class="text-ink">Παρατήρηση στο Περιβάλλον:</strong> Η παρατήρηση του ατόμου στο φυσικό του περιβάλλον, όπως το σπίτι ή το σχολείο, μπορεί να προσφέρει πολύτιμη πληροφορία για τις φυσικές κοινωνικές και επικοινωνιακές αλληλεπιδράσεις του παιδιού. Αυτή η προσέγγιση βοηθά επίσης στην αξιολόγηση της εφαρμογής και της αποτελεσματικότητας των παρεμβάσεων σε πραγματικές καταστάσεις.</p>
-        <p><strong class="text-ink">Αξιολόγηση Μέσω Ειδικών Κλιμάκων:</strong> ανάλογα με την αρχική διάγνωση αλλά και με τα συμπτώματα που παρουσιάζει το εξεταζόμενο παιδί χορηγούνται δοκιμασίες που εξετάζουν πτυχές της ανάπτυξης, της νοητικής λειτουργίας, της κινητικής λειτουργίας, της επικοινωνίας, του λόγου</p>
-        </div>
+  <section class="assessment-section assessment-prepare">
+    <div class="assessment-wrap assessment-prepare-layout">
+      <div class="reveal"><h2>Τι είναι χρήσιμο<br>να έχετε μαζί σας</h2><p>Στην επικοινωνία για το ραντεβού θα συζητήσουμε τι χρειάζεται για τη δική σας περίπτωση.</p></div>
+      <ul class="assessment-bring reveal">
+        <li>Προηγούμενες αξιολογήσεις ή γνωματεύσεις, εφόσον υπάρχουν.</li>
+        <li>Παρατηρήσεις για την καθημερινότητα του παιδιού, στο σπίτι ή στο σχολείο.</li>
+        <li>Τα ερωτήματα και τις προτεραιότητές σας.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="assessment-section assessment-questions">
+    <div class="assessment-wrap assessment-question-layout">
+      <div class="reveal"><h2>Πριν από την πρώτη συνάντηση</h2><p>Μερικές πρακτικές απαντήσεις για να οργανώσετε το πρώτο βήμα.</p></div>
+      <div class="assessment-faq reveal">
+        <details><summary>Χρειάζεται να ξέρω ποια ειδικότητα να επιλέξω;</summary><p>Μπορείτε να ξεκινήσετε περιγράφοντας όσα παρατηρείτε και όσα σας απασχολούν. Θα συζητήσουμε μαζί σας ποιο είναι το κατάλληλο επόμενο βήμα.</p></details>
+        <details><summary>Πώς μαθαίνω για τον χρόνο και το κόστος;</summary><p>Επικοινωνήστε με το κέντρο που σας εξυπηρετεί, ώστε να συζητήσουμε την οργάνωση της αξιολόγησης και τις σχετικές πληροφορίες πριν από το ραντεβού.</p></details>
+        <details><summary>Αν το αίτημά μου αφορά και γνωμάτευση ή αποζημίωση;</summary><p>Αναφέρετέ το όταν επικοινωνήσετε μαζί μας. Η παρούσα σελίδα περιγράφει τη θεραπευτική αξιολόγηση· οι σχετικές προϋποθέσεις χρειάζονται ξεχωριστή ενημέρωση για τη δική σας περίπτωση.</p></details>
       </div>
     </div>
   </section>
 
-  <section class="py-16 lg:py-24 bg-white">
-    <div class="reveal max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-      <p class="kicker text-blue text-xs mb-3">Οι κλίμακες αξιολόγησης</p>
-      <h2 class="font-display font-bold text-ink text-3xl sm:text-4xl leading-tight">Μετρήσεις που ορίζουν την <span class="text-blue">απόκλιση</span></h2>
-      <div class="prose-syn mt-5 text-[16px] text-ink/85">
-        <p>Στα κέντρα μας, διαθέτουμε όλες τις κλίμακες που θα μας βοηθήσουν να έχουμε μία καθαρή εικόνα των δυσκολιών του παιδιού στοιχειοθετημένη από μετρήσεις οι οποίες ορίζουν την απόκλιση σε σχέση με τους συνομηλίκους του.</p>
-        <p>Ενδεικτικά, <strong class="text-ink">για την αξιολόγηση της νοημοσύνης</strong> χορηγούνται ανάλογα με την ηλικία το WPPSI-III, το WISC V και το WAIS IV τα οποία εκτός από το επίπεδο νοητικής λειτουργικότητας μας παρέχουν σημαντικές και ποικίλως αξιοποιήσιμες πληροφορίες σχετικά με διάφορους γνωστικούς τομείς.</p>
-        <p><strong class="text-ink">Για την αξιολόγηση στον αυτισμό</strong>, χορηγούμε το PEP-3 (εξατομικευμένο Ψυχοεκπαιδευτικό προφίλ από το τμήμα διεύθυνσης TEACCH), το ADOS-2 σε συνδυασμό με τη διαγνωστική συνέντευξη ADI-R και συμπληρώνουμε το Εργαλείο Διεπιστημονικής Ομάδας για την Αξιολόγηση του Επιπέδου Λειτουργικότητας Παιδιού στο Φάσμα του Αυτισμού (ΕΔΑΛΦΑ), ενώ αξιολογούνται χωριστά οι διάφοροι τομείς στους οποίους παρεμβαίνουμε.</p>
-        <p><strong class="text-ink">Για την αρχική εργοθεραπευτική αξιολόγηση</strong>, χορηγείται το Movement ABC-2 και στην πορεία, πιο εξειδικευμένες κλίμακες ώστε να συμπηρωθεί το προφίλ του παιδιού όπως το DTVP-3, το PDMS- 2, οι δομημένες κλινικές παρατηρήσεις της A.J. Ayres, το Bender Test.</p>
-        <p><strong class="text-ink">Για τη λογοθεραπευτική αξιολόγηση</strong>, χρησιμοποιείται το Λογόμετρο που συμπληρώνεται μαζί με το παιδί στον υπολογιστή και αποτελεί σταθμισμένη γλωσσική αξιολόγηση για παιδιά προσχολικής και πρώτης σχολικής ηλικίας, καθώς και άλλες δοκιμασίες όπως η δοκιμασία φωνητικής και φωνολογικής εξέλιξης του Πανελλήνιου Συλλόγου Λογοπεδικών, το ECOSSE για τη μορφοσυντακτική ικανότητα, οι Εικόνες Δράσης για την Πληροφοριακή και Γραμματειακή Επάρκεια, η Δοκιμασία Εκφραστικού Λεξιλογίου, κ.λ.π</p>
-        <p><strong class="text-ink">Για την Ψυχοσυναισθηματική αξιολόγηση</strong>, επιλέγουμε προβολικές δοκιμασίες ανάλογα με την ηλικία όπως οι ιστορίες της DÜSS, το CAT, το TAT, το Rorchach.</p>
-        <p>Η αξιολόγηση συνδράμει στη βαθύτερη κατανόηση των δυσκολιών και την αποδοχή των αναγκών του παιδιού.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="relative bg-mist overflow-hidden">
-    <div class="pointer-events-none absolute -top-20 -right-16 w-80 h-80 rounded-full bg-green/10 blur-2xl"></div>
-    <div class="pointer-events-none absolute -bottom-20 -left-16 w-80 h-80 rounded-full bg-blue/10 blur-2xl"></div>
-    <div class="reveal relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20 text-center">
-      <h2 class="font-display font-bold text-ink text-3xl sm:text-4xl leading-tight">Όταν το παιδί εξελίσσεται, <span class="text-green">ο κόσμος αλλάζει προς το καλύτερο.</span></h2>
-      <div class="mt-8"><a href="contact-us.html" class="inline-flex items-center gap-2 rounded-full bg-green px-8 py-4 text-grey text-lg font-bold shadow-soft hover:bg-[#7CB22E] transition">Επικοινωνήστε μαζί μας <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
-    </div>
+  <section class="assessment-close">
+    <div class="assessment-wrap reveal"><h2>Ας συζητήσουμε το πρώτο βήμα</h2><p>Μιλήστε μαζί μας για όσα σας απασχολούν, για να οργανώσουμε την πρώτη συνάντηση.</p><div class="assessment-close-actions"><a class="assessment-button" href="contact-us.html#contact-centres">Μιλήστε μαζί μας <span aria-hidden="true">→</span></a><a class="assessment-text-link" href="treatments.html">Γνωρίστε τις θεραπείες μας <span aria-hidden="true">→</span></a></div></div>
   </section>
 </main>
 
