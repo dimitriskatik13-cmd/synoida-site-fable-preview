@@ -4,6 +4,7 @@ import glob
 import os
 import re
 import sys
+import hashlib
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)                      # example/
@@ -68,6 +69,11 @@ for outfile, (title, desc, page) in PAGES.items():
     if outfile == 'index.html':
         # Approved logo particle effect belongs only to the homepage.
         out = out.replace('</body>', '  <script src="assets/stars-mark.js" defer></script>\n</body>', 1)
+    # Content versions keep iterative previews fresh without changing images.
+    for asset in ('preview.css', 'stars-mark.js'):
+        with open(os.path.join(ROOT, 'assets', asset), 'rb') as asset_file:
+            version = hashlib.sha256(asset_file.read()).hexdigest()[:12]
+        out = out.replace('"assets/%s"' % asset, '"assets/%s?v=%s"' % (asset, version))
     if outfile == '404.html':
         # το 404 σερβίρεται από το GitHub Pages σε οποιοδήποτε path — τα σχετικά links θέλουν σταθερή βάση
         out = out.replace('<head>', '<head>\n  <base href="%s" />' % BASE_URL, 1)
