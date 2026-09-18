@@ -1,74 +1,65 @@
-<main>
-  <section class="relative">
+<main id="main" class="contact-refined">
+  <section class="relative contact-hero">
     <div class="relative min-h-[360px] lg:min-h-[440px] flex items-end overflow-hidden">
-      <img fetchpriority="high" src="assets/contact-hero.jpg" alt="Χώρος υποδοχής του κέντρου ειδικών θεραπειών ΣΥΝΟΙΔΑ" class="absolute inset-0 w-full h-full object-cover" />
+      <img fetchpriority="high" src="assets/contact-hero.jpg" alt="Πρόσοψη κέντρου ειδικών θεραπειών ΣΥΝΟΙΔΑ" class="absolute inset-0 w-full h-full object-cover" />
       <div class="absolute inset-0 hero-scrim-b"></div>
       <div class="reveal relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full pb-12 pt-28">
         <nav aria-label="Breadcrumb" class="flex items-center gap-2 text-sm text-white/85 mb-4"><a href="index.html" class="hover:text-white">Αρχική</a><span aria-hidden="true">/</span><span class="text-white font-semibold" aria-current="page">Επικοινωνία</span></nav>
-        <p class="kicker text-white/80 text-xs mb-3">Είμαστε εδώ για εσάς</p>
         <h1 class="font-display font-bold text-white text-4xl sm:text-5xl lg:text-6xl leading-[1.1] max-w-3xl">Επικοινωνία</h1>
+        <p class="contact-hero-copy">Είμαστε εδώ για να ακούσουμε όσα σας απασχολούν και να συζητήσουμε τα επόμενα βήματα.</p>
       </div>
     </div>
   </section>
 
-  <section class="py-16 lg:py-24 bg-mist">
-    <div class="reveal max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <p class="kicker text-green text-xs mb-3">Ελάτε σε επαφή</p>
-      <h2 class="font-display font-bold text-ink text-3xl sm:text-4xl leading-tight">Για περισσότερες πληροφορίες <span class="text-green">επικοινωνήστε μαζί μας</span></h2>
-      <div class="mt-8 flex justify-center">
-        <a href="contact-us.html" class="inline-flex items-center gap-2 rounded-full bg-grey px-7 py-3.5 text-white font-semibold shadow-soft hover:bg-grey/90 transition">Αποστολή Μηνύματος <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  <section class="contact-intro" aria-labelledby="contact-choice-title">
+    <div class="contact-wrap">
+      <div class="contact-intro-panel reveal">
+        <div><h2 id="contact-choice-title">Ποιο κέντρο σας εξυπηρετεί;</h2><p>Καλέστε απευθείας το κέντρο που σας εξυπηρετεί ή στείλτε μας email.</p></div>
+        <a class="contact-email-action" href="mailto:info@synoida.gr?subject=%CE%95%CF%80%CE%B9%CE%BA%CE%BF%CE%B9%CE%BD%CF%89%CE%BD%CE%AF%CE%B1%20%CE%BC%CE%B5%20%CF%84%CE%B7%20%CE%A3%CE%A5%CE%9D%CE%9F%CE%99%CE%94%CE%91">Στείλτε μας email <span aria-hidden="true">↗</span></a>
+        <nav class="contact-jumps" aria-label="Επιλογή κέντρου"><a href="#centre-artemida"><span style="background:#8DC63F" aria-hidden="true"></span>Αρτέμιδα</a><a href="#centre-spata"><span style="background:#ED1C24" aria-hidden="true"></span>Σπάτα</a><a href="#centre-nea-makri"><span style="background:#00AEEF" aria-hidden="true"></span>Νέα Μάκρη</a><a href="#centre-marathonas"><span style="background:#F7941D" aria-hidden="true"></span>Μαραθώνας</a></nav>
       </div>
     </div>
   </section>
 
-  <section class="py-16 lg:py-24 bg-white">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="reveal max-w-3xl mx-auto text-center mb-12">
-        <p class="kicker text-green text-xs mb-3">Τοποθεσία</p>
-        <h2 class="font-display font-bold text-ink text-3xl sm:text-4xl leading-tight">Τα <span class="text-green">κέντρα μας</span></h2>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        <div class="reveal rounded-3xl bg-white ring-1 ring-grey/10 shadow-soft p-6">
-          <span class="grid place-items-center w-14 h-14 rounded-full bg-green text-white mb-5"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
-          <h3 id="centre-spata" class="font-display font-bold text-ink text-xl mb-2">Σπάτα</h3>
-          <p class="text-ink/85 leading-relaxed text-[15px]">Στρατηγού Πλαστήρα 1 &amp; Χ. Μπέκα, Σπάτα</p>
-          <div class="mt-4 flex items-center justify-between gap-3"><a href="tel:+302106633333" class="text-grey font-semibold hover:underline">2106633333</a><a href="https://www.google.com/maps/search/?api=1&amp;query=%CE%A3%CF%84%CF%81%CE%B1%CF%84%CE%B7%CE%B3%CE%BF%CF%8D%20%CE%A0%CE%BB%CE%B1%CF%83%CF%84%CE%AE%CF%81%CE%B1%201%20%CE%BA%CE%B1%CE%B9%20%CE%A7.%20%CE%9C%CF%80%CE%AD%CE%BA%CE%B1%2C%20%CE%A3%CF%80%CE%AC%CF%84%CE%B1" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-[13px] font-semibold text-blue hover:underline">Οδηγίες <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
-        </div>
-        <div class="reveal d1 rounded-3xl bg-white ring-1 ring-grey/10 shadow-soft p-6">
-          <span class="grid place-items-center w-14 h-14 rounded-full bg-green text-white mb-5"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
-          <h3 id="centre-artemida" class="font-display font-bold text-ink text-xl mb-2">Αρτέμιδα</h3>
-          <p class="text-ink/85 leading-relaxed text-[15px]">7η Στάση Βραυρώνος, Αρτέμιδα</p>
-          <div class="mt-4 flex items-center justify-between gap-3"><a href="tel:+302294049981" class="text-grey font-semibold hover:underline">2294049981</a><a href="https://www.google.com/maps/search/?api=1&amp;query=7%CE%B7%20%CE%A3%CF%84%CE%AC%CF%83%CE%B7%20%CE%92%CF%81%CE%B1%CF%85%CF%81%CF%8E%CE%BD%CE%BF%CF%82%2C%20%CE%91%CF%81%CF%84%CE%AD%CE%BC%CE%B9%CE%B4%CE%B1" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-[13px] font-semibold text-blue hover:underline">Οδηγίες <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
-        </div>
-        <div class="reveal d2 rounded-3xl bg-white ring-1 ring-grey/10 shadow-soft p-6">
-          <span class="grid place-items-center w-14 h-14 rounded-full bg-green text-white mb-5"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
-          <h3 id="centre-nea-makri" class="font-display font-bold text-ink text-xl mb-2">Νέα Μάκρη</h3>
-          <p class="text-ink/85 leading-relaxed text-[15px]">Αγίας Παρασκευής 8, Νέα Μάκρη</p>
-          <div class="mt-4 flex items-center justify-between gap-3"><a href="tel:+302294700956" class="text-grey font-semibold hover:underline">2294700956</a><a href="https://www.google.com/maps/search/?api=1&amp;query=%CE%91%CE%B3%CE%AF%CE%B1%CF%82%20%CE%A0%CE%B1%CF%81%CE%B1%CF%83%CE%BA%CE%B5%CF%85%CE%AE%CF%82%208%2C%20%CE%9D%CE%AD%CE%B1%20%CE%9C%CE%AC%CE%BA%CF%81%CE%B7" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-[13px] font-semibold text-blue hover:underline">Οδηγίες <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
-        </div>
-        <div class="reveal d3 rounded-3xl bg-white ring-1 ring-grey/10 shadow-soft p-6">
-          <span class="grid place-items-center w-14 h-14 rounded-full bg-green text-white mb-5"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
-          <h3 id="centre-marathonas" class="font-display font-bold text-ink text-xl mb-2">Μαραθώνας</h3>
-          <p class="text-ink/85 leading-relaxed text-[15px]">Σπηλαίου Πανός 10, Μαραθώνας</p>
-          <div class="mt-4 flex items-center justify-between gap-3"><a href="tel:+306945454203" class="text-grey font-semibold hover:underline">6945454203</a><a href="https://www.google.com/maps/search/?api=1&amp;query=%CE%A3%CF%80%CE%B7%CE%BB%CE%B1%CE%AF%CE%BF%CF%85%20%CE%A0%CE%B1%CE%BD%CF%8C%CF%82%2010%2C%20%CE%9C%CE%B1%CF%81%CE%B1%CE%B8%CF%8E%CE%BD%CE%B1%CF%82" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-[13px] font-semibold text-blue hover:underline">Οδηγίες <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
-        </div>
-      </div>
-      <div class="reveal mt-10 max-w-xl mx-auto">
-        <div class="rounded-3xl bg-white ring-1 ring-grey/10 shadow-soft p-6 text-center">
-          <span class="mx-auto grid place-items-center w-14 h-14 rounded-full bg-green text-white mb-5"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"/><path d="m22 7-10 6L2 7"/></svg></span>
-          <h3 class="font-display font-bold text-ink text-xl mb-2">E-mail</h3>
-          <a href="mailto:info@synoida.gr" class="text-grey font-semibold hover:underline">info@synoida.gr</a>
-        </div>
-      </div>
+  <section id="contact-centres" class="contact-directory" aria-labelledby="contact-centres-title">
+    <div class="contact-wrap">
+      <div class="contact-directory-title reveal"><h2 id="contact-centres-title">Τα κέντρα μας</h2><p>Τηλέφωνα, διευθύνσεις και πρόσβαση.</p></div>
+      <div class="contact-centres-grid"><article id="centre-artemida" class="contact-centre reveal" style="--centre-color:#8DC63F">
+  <div class="contact-card-top"><span class="contact-pin" aria-hidden="true"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></span><h3>Αρτέμιδα</h3></div>
+  <address>7η Στάση Βραυρώνος, Αρτέμιδα</address>
+  <p class="contact-phone-label">Τηλέφωνο</p>
+  <a class="contact-phone" href="tel:+302294049981" aria-label="Καλέστε το κέντρο στην περιοχή Αρτέμιδα: 2294049981">22940 49981</a>
+  <a class="contact-map" href="https://www.google.com/maps/search/?api=1&amp;query=7%CE%B7%20%CE%A3%CF%84%CE%AC%CF%83%CE%B7%20%CE%92%CF%81%CE%B1%CF%85%CF%81%CF%8E%CE%BD%CE%BF%CF%82%2C%20%CE%91%CF%81%CF%84%CE%AD%CE%BC%CE%B9%CE%B4%CE%B1" target="_blank" rel="noopener" aria-label="Δείτε το κέντρο στην περιοχή Αρτέμιδα στον χάρτη, σε νέα καρτέλα">Δείτε στον χάρτη <span aria-hidden="true">↗</span></a>
+ </article><article id="centre-spata" class="contact-centre reveal" style="--centre-color:#ED1C24">
+  <div class="contact-card-top"><span class="contact-pin" aria-hidden="true"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></span><h3>Σπάτα</h3></div>
+  <address>Στρατηγού Πλαστήρα 1 &amp; Χ. Μπέκα, Σπάτα</address>
+  <p class="contact-phone-label">Τηλέφωνο</p>
+  <a class="contact-phone" href="tel:+302106633333" aria-label="Καλέστε το κέντρο στην περιοχή Σπάτα: 2106633333">210 6633333</a>
+  <a class="contact-map" href="https://www.google.com/maps/search/?api=1&amp;query=%CE%A3%CF%84%CF%81%CE%B1%CF%84%CE%B7%CE%B3%CE%BF%CF%8D%20%CE%A0%CE%BB%CE%B1%CF%83%CF%84%CE%AE%CF%81%CE%B1%201%20%CE%BA%CE%B1%CE%B9%20%CE%A7.%20%CE%9C%CF%80%CE%AD%CE%BA%CE%B1%2C%20%CE%A3%CF%80%CE%AC%CF%84%CE%B1" target="_blank" rel="noopener" aria-label="Δείτε το κέντρο στην περιοχή Σπάτα στον χάρτη, σε νέα καρτέλα">Δείτε στον χάρτη <span aria-hidden="true">↗</span></a>
+ </article><article id="centre-nea-makri" class="contact-centre reveal" style="--centre-color:#00AEEF">
+  <div class="contact-card-top"><span class="contact-pin" aria-hidden="true"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></span><h3>Νέα Μάκρη</h3></div>
+  <address>Αγίας Παρασκευής 8, Νέα Μάκρη</address>
+  <p class="contact-phone-label">Τηλέφωνο</p>
+  <a class="contact-phone" href="tel:+302294700956" aria-label="Καλέστε το κέντρο στην περιοχή Νέα Μάκρη: 2294700956">22947 00956</a>
+  <a class="contact-map" href="https://www.google.com/maps/search/?api=1&amp;query=%CE%91%CE%B3%CE%AF%CE%B1%CF%82%20%CE%A0%CE%B1%CF%81%CE%B1%CF%83%CE%BA%CE%B5%CF%85%CE%AE%CF%82%208%2C%20%CE%9D%CE%AD%CE%B1%20%CE%9C%CE%AC%CE%BA%CF%81%CE%B7" target="_blank" rel="noopener" aria-label="Δείτε το κέντρο στην περιοχή Νέα Μάκρη στον χάρτη, σε νέα καρτέλα">Δείτε στον χάρτη <span aria-hidden="true">↗</span></a>
+ </article><article id="centre-marathonas" class="contact-centre reveal" style="--centre-color:#F7941D">
+  <div class="contact-card-top"><span class="contact-pin" aria-hidden="true"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></span><h3>Μαραθώνας</h3></div>
+  <address>Σπηλαίου Πανός 10, Μαραθώνας</address>
+  <p class="contact-phone-label">Τηλέφωνο</p>
+  <a class="contact-phone" href="tel:+306945454203" aria-label="Καλέστε το κέντρο στην περιοχή Μαραθώνας: 6945454203">694 5454203</a>
+  <a class="contact-map" href="https://www.google.com/maps/search/?api=1&amp;query=%CE%A3%CF%80%CE%B7%CE%BB%CE%B1%CE%AF%CE%BF%CF%85%20%CE%A0%CE%B1%CE%BD%CF%8C%CF%82%2010%2C%20%CE%9C%CE%B1%CF%81%CE%B1%CE%B8%CF%8E%CE%BD%CE%B1%CF%82" target="_blank" rel="noopener" aria-label="Δείτε το κέντρο στην περιοχή Μαραθώνας στον χάρτη, σε νέα καρτέλα">Δείτε στον χάρτη <span aria-hidden="true">↗</span></a>
+ </article></div>
     </div>
   </section>
 
-  <section class="relative bg-mist overflow-hidden">
-    <div class="pointer-events-none absolute -top-20 -right-16 w-80 h-80 rounded-full bg-green/10 blur-2xl"></div>
-    <div class="pointer-events-none absolute -bottom-20 -left-16 w-80 h-80 rounded-full bg-blue/10 blur-2xl"></div>
-    <div class="reveal relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20 text-center">
-      <h2 class="font-display font-bold text-ink text-3xl sm:text-4xl leading-tight">Όταν το παιδί εξελίσσεται, <span class="text-green">ο κόσμος αλλάζει προς το καλύτερο.</span></h2>
-      <div class="mt-8"><a href="contact-us.html" class="inline-flex items-center gap-2 rounded-full bg-green px-8 py-4 text-grey text-lg font-bold shadow-soft hover:bg-[#7CB22E] transition">Επικοινωνήστε μαζί μας <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  <section id="contact-email" class="contact-email-section">
+    <div class="contact-wrap contact-email-layout">
+      <div class="reveal"><h2>Προτιμάτε να μας γράψετε;</h2><p>Γράψτε μας ποιο κέντρο σας εξυπηρετεί και πώς μπορούμε να επικοινωνήσουμε μαζί σας.</p></div>
+      <div class="reveal contact-email-details"><a id="contact-email-address" href="mailto:info@synoida.gr?subject=%CE%95%CF%80%CE%B9%CE%BA%CE%BF%CE%B9%CE%BD%CF%89%CE%BD%CE%AF%CE%B1%20%CE%BC%CE%B5%20%CF%84%CE%B7%20%CE%A3%CE%A5%CE%9D%CE%9F%CE%99%CE%94%CE%91">info@synoida.gr</a><p>Ο σύνδεσμος ανοίγει την εφαρμογή email σας.</p><button type="button" id="copy-contact-email">Αντιγραφή διεύθυνσης email</button><p id="contact-copy-status" role="status" aria-live="polite"></p></div>
     </div>
+  </section>
+
+  <section class="contact-next">
+    <div class="contact-wrap reveal"><h2>Θέλετε πρώτα να δείτε πώς ξεκινάμε;</h2><p>Γνωρίστε τη διαδικασία, από την πρώτη συζήτηση μέχρι τον σχεδιασμό του προγράμματος.</p><a href="about-us.html#pos-xekiname">Δείτε τα πρώτα βήματα <span aria-hidden="true">→</span></a></div>
   </section>
 </main>
