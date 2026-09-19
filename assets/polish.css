@@ -167,6 +167,13 @@ details.phones>summary:focus-visible,.callbar-contact:focus-visible,.topbar-cent
 /* ---- 17. Homepage hero: a touch more contrast behind the text, the right side of the photo stays bright ---- */
 .home-refined .home-hero .hero-scrim{background:linear-gradient(90deg,rgba(35,36,34,.80),rgba(35,36,34,.58) 36%,rgba(35,36,34,.18) 60%,rgba(35,36,34,.04) 78%)}
 
-/* ---- 18. Therapy cards: the coloured rule no longer runs through the icon; it starts to its right, and the icon keeps a clean white ring ---- */
-.home-refined .svc-media::after,.svc-media::after{left:calc(1.5rem + 3.5rem + 14px);right:0;height:3px;border-radius:2px}
+/* ---- 18. Therapy cards: the coloured rule runs edge to edge along the bottom of the photo, rises over the icon as a half ring inside the photo and closes on the other side.
+   One colour per card (--rule), shared by the line and the half ring; the icon keeps its white ring in between. ---- */
+.svc-card{--rule:#8DC63F}
+.svc-card[href*="occupational"]{--rule:#ED1C24}
+.svc-card[href*="special"]{--rule:#00AEEF}
+.svc-card[href*="psychotherapy"],.svc-card[href*="play"]{--rule:#F7941D}
+.svc-card[href*="consulting"]{--rule:#58595B}
+.home-refined .svc-media::after,.svc-media::after{left:0;right:0;bottom:-1.5px;height:3px;border-radius:0;background:var(--rule)}
 .svc-card .svc-media .svc-icon{z-index:1;box-shadow:0 0 0 5px #fff}
+.svc-card .svc-media .svc-icon::after{content:"";position:absolute;inset:-8px;border-radius:50%;border:3px solid var(--rule);clip-path:inset(0 0 50% 0);pointer-events:none}
