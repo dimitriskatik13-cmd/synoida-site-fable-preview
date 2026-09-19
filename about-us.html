@@ -18,18 +18,20 @@
   <meta property="og:url" content="https://dimitriskatik13-cmd.github.io/synoida-site-preview/about-us.html" />
   <meta property="og:image" content="https://dimitriskatik13-cmd.github.io/synoida-site-preview/assets/about-storefront.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalOrganization","@id":"https://dimitriskatik13-cmd.github.io/synoida-site-preview/#org","name":"Σύνοιδα Κέντρα Ειδικών Θεραπειών","alternateName":"ΣΥΝΟΙΔΑ","url":"https://dimitriskatik13-cmd.github.io/synoida-site-preview/","logo":"https://dimitriskatik13-cmd.github.io/synoida-site-preview/assets/logo-stacked-light.png","email":"info@synoida.gr","foundingDate":"1998","areaServed":["Σπάτα","Αρτέμιδα","Νέα Μάκρη","Μαραθώνας","Ραφήνα","Παλλήνη","Ανατολική Αττική"],"sameAs":["https://www.facebook.com/www.synoida.gr/","https://www.synoida.gr"],"medicalSpecialty":["SpeechPathology","OccupationalTherapy","Psychiatry"],"location":[{"@type":"MedicalClinic","name":"Σύνοιδα Σπάτα","telephone":"+302106633333","address":{"@type":"PostalAddress","streetAddress":"Στρατηγού Πλαστήρα 1 & Χ. Μπέκα","addressLocality":"Σπάτα","addressRegion":"Αττική","addressCountry":"GR"}},{"@type":"MedicalClinic","name":"Σύνοιδα Αρτέμιδα","telephone":"+302294049981","address":{"@type":"PostalAddress","streetAddress":"7η Στάση Βραυρώνος","addressLocality":"Αρτέμιδα","addressRegion":"Αττική","addressCountry":"GR"}},{"@type":"MedicalClinic","name":"Σύνοιδα Νέα Μάκρη","telephone":"+302294700956","address":{"@type":"PostalAddress","streetAddress":"Αγίας Παρασκευής 8","addressLocality":"Νέα Μάκρη","addressRegion":"Αττική","addressCountry":"GR"}},{"@type":"MedicalClinic","name":"Σύνοιδα Μαραθώνας","telephone":"+306945454203","address":{"@type":"PostalAddress","streetAddress":"Σπηλαίου Πανός 10","addressLocality":"Μαραθώνας","addressRegion":"Αττική","addressCountry":"GR"}}]}</script>
   <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png" />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Γραμματοσειρές τοπικά (assets/fonts): χωρίς αίτημα προς Google, font-display swap -->
+  <link rel="preload" href="assets/fonts/inter-400-greek.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/comfortaa-700-greek.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="assets/fonts.css" />
 
   <!-- Tailwind: προ-παραγμένο στατικό CSS (από _build/gen_css.py — χωρίς runtime JS) -->
   <link rel="stylesheet" href="assets/site.css" />
   <link rel="stylesheet" href="assets/preview.css?v=c4a117cf6b9a" />
-  <link rel="stylesheet" href="assets/polish.css?v=0c7b54c9634e" />
+  <link rel="stylesheet" href="assets/polish.css?v=90fc2462c667" />
 
   <style>
     html { scroll-behavior: smooth; }
@@ -238,7 +240,7 @@
 <main id="main" class="about-refined">
   <section class="relative hero-depth about-hero">
     <div class="relative flex items-end overflow-hidden">
-      <div class="hero-plane"><img fetchpriority="high" src="assets/about-storefront.jpg" alt="Γυάλινη είσοδος χώρου της ΣΥΝΟΙΔΑ μέσα σε στοά" /></div>
+      <div class="hero-plane"><img fetchpriority="high" src="assets/about-storefront.jpg" srcset="assets/about-storefront-800.webp 800w, assets/about-storefront-1600.webp 1600w" sizes="(max-width: 1023px) 100vw, 1152px" alt="Γυάλινη είσοδος χώρου της ΣΥΝΟΙΔΑ μέσα σε στοά" /></div>
       <div class="absolute inset-0 hero-scrim-b"></div>
       <div class="reveal relative about-wrap about-hero-content">
         <nav aria-label="Breadcrumb" class="about-breadcrumb"><a href="index.html">Αρχική</a><span aria-hidden="true">/</span><span aria-current="page">Σχετικά με μας</span></nav>
@@ -260,7 +262,7 @@
   <section id="about-story" class="about-story about-section">
     <div class="about-wrap">
       <div class="about-story-layout">
-        <figure class="reveal about-photo about-history-photo"><div class="depth-box" data-progress="1 0"><div class="depth-clip"><img loading="lazy" decoding="async" src="assets/about-history.jpg" alt="Εξωτερική όψη κτιρίου με μεγάλη πινακίδα ΣΥΝΟΙΔΑ" /></div></div><figcaption>Χώροι για το παιχνίδι, τη γνωριμία και την εξέλιξη.</figcaption></figure>
+        <figure class="reveal about-photo about-history-photo"><div class="depth-box" data-progress="1 0"><div class="depth-clip"><img loading="lazy" decoding="async" src="assets/about-history.jpg" srcset="assets/about-history-800.webp 800w, assets/about-history-1600.webp 1600w" sizes="(max-width: 1023px) 100vw, 1152px" alt="Εξωτερική όψη κτιρίου με μεγάλη πινακίδα ΣΥΝΟΙΔΑ" /></div></div><figcaption>Χώροι για το παιχνίδι, τη γνωριμία και την εξέλιξη.</figcaption></figure>
         <div class="reveal d1 about-story-copy"><p class="about-eyebrow">Η ιστορία μας</p><p class="about-year" aria-label="Από το 1998">1998<span aria-hidden="true">↗</span></p><h2>Μια αρχή στα Σπάτα.<br>Μια σχέση που συνεχίζεται.</h2><p>Το πρώτο μας κέντρο δημιουργήθηκε το 1998 στα Σπάτα. Ακολούθησαν η Αρτέμιδα το 2010 και η Νέα Μάκρη με τον Μαραθώνα το 2018.</p><p>Σήμερα, σε <span data-count="4" data-count-ms="1200">4</span> κέντρα, συνεχίζουμε με την ίδια αφετηρία: να κατανοούμε τις ανάγκες του παιδιού και να στεκόμαστε δίπλα στην οικογένεια με επιστημονικότητα και ενσυναίσθηση.</p><a href="contact-us.html#contact-centres" class="about-text-link">Γνωρίστε τα κέντρα μας <span aria-hidden="true">↗</span></a></div>
       </div>
       <div class="reveal tl about-timeline" data-progress="0.85 0.55" aria-label="Η διαδρομή της ΣΥΝΟΙΔΑ">
@@ -277,7 +279,7 @@
     <div class="about-wrap">
       <div class="about-team-intro"><div class="reveal"><p class="about-eyebrow">Η ομάδα μας</p><h2>Διαφορετικές ειδικότητες.<br><span>Κοινή κατεύθυνση.</span></h2></div><p class="reveal d1">Οι ανάγκες ενός παιδιού δεν χωρούν πάντα σε μία ειδικότητα. Οι θεραπευτές μας συνεργάζονται, ανταλλάσσουν παρατηρήσεις και συνδέουν τους στόχους της υποστήριξής του.</p></div>
       <div class="about-team-layout">
-        <figure class="reveal about-photo"><div class="depth-box" data-progress="1 0"><div class="depth-clip"><img loading="lazy" decoding="async" src="assets/about-team.jpg" alt="Χώρος θεραπείας της ΣΥΝΟΙΔΑ με τραπέζι, καθίσματα και κρεμαστό εξοπλισμό" /></div></div><figcaption>Ένας από τους χώρους όπου το παιχνίδι γίνεται μέρος της θεραπείας.</figcaption></figure>
+        <figure class="reveal about-photo"><div class="depth-box" data-progress="1 0"><div class="depth-clip"><img loading="lazy" decoding="async" src="assets/about-team.jpg" srcset="assets/about-team-800.webp 800w, assets/about-team-1600.webp 1600w" sizes="(max-width: 1023px) 100vw, 1152px" alt="Χώρος θεραπείας της ΣΥΝΟΙΔΑ με τραπέζι, καθίσματα και κρεμαστό εξοπλισμό" /></div></div><figcaption>Ένας από τους χώρους όπου το παιχνίδι γίνεται μέρος της θεραπείας.</figcaption></figure>
         <div class="reveal d1 about-team-principles">
           <div><span class="about-principle-index" aria-hidden="true">01</span><h3>Μοιραζόμαστε την εικόνα</h3><p>Η ομάδα συνεδριάζει κάθε μήνα για την εξέλιξη κάθε παιδιού. Οι θεραπευτές συζητούν τις δυσκολίες που προκύπτουν και αναζητούν λύσεις μαζί με τις υπόλοιπες ειδικότητες.</p></div>
           <div><span class="about-principle-index" aria-hidden="true">02</span><h3>Στηρίζουμε τους θεραπευτές μας</h3><p>Οι νέοι θεραπευτές πλαισιώνονται με εποπτεία, σε ένα περιβάλλον ανταλλαγής γνώσεων και συνεργασίας.</p></div>
@@ -346,7 +348,7 @@
     <div class="border-t border-white/15">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-sm text-white/80">
         <p class="font-semibold tracking-wide">Αρτέμιδα · Σπάτα · Νέα Μάκρη · Μαραθώνας</p>
-        <p><a href="mailto:info@synoida.gr" class="hover:text-white transition">info@synoida.gr</a> · <a href="https://www.synoida.gr" target="_blank" rel="noopener" class="hover:text-white transition">www.synoida.gr</a></p>
+        <p><a href="mailto:info@synoida.gr" class="hover:text-white transition">info@synoida.gr</a> · <a href="https://www.synoida.gr" target="_blank" rel="noopener" class="hover:text-white transition">www.synoida.gr</a> · <a href="privacy.html" class="hover:text-white transition">Πολιτική απορρήτου</a></p>
       </div>
     </div>
   </footer>

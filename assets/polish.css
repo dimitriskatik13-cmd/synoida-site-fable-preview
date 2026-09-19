@@ -135,3 +135,21 @@ details.phones>summary:focus-visible,.callbar-contact:focus-visible,.topbar-cent
 .preview-value-copy h3{font-family:Inter,system-ui,sans-serif;font-size:17px;line-height:1.5;font-weight:700;text-wrap:initial;margin:0 0 8px;color:#303133}
 @media (max-width:1023px){.home-value:nth-child(-n+2) h3{font-size:17px}}
 @media (max-width:639px){.preview-value-copy h3{font-size:17px}}
+
+/* ---- 14. Tailwind utilities used in fragments but absent from the pre-generated site.css (build runs with --keep-css) ---- */
+.rounded-\[2\.5rem\]{border-radius:2.5rem}
+.leading-\[1\.15\]{line-height:1.15}
+.min-h-\[360px\]{min-height:360px}
+@media (min-width:1024px){
+  .lg\:min-h-\[440px\]{min-height:440px}
+  .lg\:grid-cols-\[1\.4fr_1fr\]{grid-template-columns:1.4fr 1fr}
+  .lg\:grid-cols-\[1fr_1\.4fr\]{grid-template-columns:1fr 1.4fr}
+}
+/* privacy page */
+.privacy-wrap{max-width:46rem;margin:0 auto;padding:56px 20px 80px}
+.privacy-wrap h1{font-size:clamp(30px,4vw,44px);margin:0 0 8px}
+.privacy-wrap .lede{color:#58595B;font-size:17px;line-height:1.7;margin:0 0 36px}
+.privacy-wrap h2{font-size:22px;margin:36px 0 10px}
+.privacy-wrap p,.privacy-wrap li{line-height:1.8;color:#58595B}
+.privacy-wrap ul{padding-left:1.2rem}
+.privacy-wrap .todo{background:#FBF7F0;border-left:3px solid #F7941D;padding:10px 14px;border-radius:8px;font-size:14px}

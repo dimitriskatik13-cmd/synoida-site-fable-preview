@@ -18,18 +18,20 @@
   <meta property="og:url" content="https://dimitriskatik13-cmd.github.io/synoida-site-preview/rating.html" />
   <meta property="og:image" content="https://dimitriskatik13-cmd.github.io/synoida-site-preview/assets/rating-hero.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalOrganization","@id":"https://dimitriskatik13-cmd.github.io/synoida-site-preview/#org","name":"Σύνοιδα Κέντρα Ειδικών Θεραπειών","alternateName":"ΣΥΝΟΙΔΑ","url":"https://dimitriskatik13-cmd.github.io/synoida-site-preview/","logo":"https://dimitriskatik13-cmd.github.io/synoida-site-preview/assets/logo-stacked-light.png","email":"info@synoida.gr","foundingDate":"1998","areaServed":["Σπάτα","Αρτέμιδα","Νέα Μάκρη","Μαραθώνας","Ραφήνα","Παλλήνη","Ανατολική Αττική"],"sameAs":["https://www.facebook.com/www.synoida.gr/","https://www.synoida.gr"],"medicalSpecialty":["SpeechPathology","OccupationalTherapy","Psychiatry"],"location":[{"@type":"MedicalClinic","name":"Σύνοιδα Σπάτα","telephone":"+302106633333","address":{"@type":"PostalAddress","streetAddress":"Στρατηγού Πλαστήρα 1 & Χ. Μπέκα","addressLocality":"Σπάτα","addressRegion":"Αττική","addressCountry":"GR"}},{"@type":"MedicalClinic","name":"Σύνοιδα Αρτέμιδα","telephone":"+302294049981","address":{"@type":"PostalAddress","streetAddress":"7η Στάση Βραυρώνος","addressLocality":"Αρτέμιδα","addressRegion":"Αττική","addressCountry":"GR"}},{"@type":"MedicalClinic","name":"Σύνοιδα Νέα Μάκρη","telephone":"+302294700956","address":{"@type":"PostalAddress","streetAddress":"Αγίας Παρασκευής 8","addressLocality":"Νέα Μάκρη","addressRegion":"Αττική","addressCountry":"GR"}},{"@type":"MedicalClinic","name":"Σύνοιδα Μαραθώνας","telephone":"+306945454203","address":{"@type":"PostalAddress","streetAddress":"Σπηλαίου Πανός 10","addressLocality":"Μαραθώνας","addressRegion":"Αττική","addressCountry":"GR"}}]}</script>
   <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png" />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Γραμματοσειρές τοπικά (assets/fonts): χωρίς αίτημα προς Google, font-display swap -->
+  <link rel="preload" href="assets/fonts/inter-400-greek.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/comfortaa-700-greek.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="assets/fonts.css" />
 
   <!-- Tailwind: προ-παραγμένο στατικό CSS (από _build/gen_css.py — χωρίς runtime JS) -->
   <link rel="stylesheet" href="assets/site.css" />
   <link rel="stylesheet" href="assets/preview.css?v=c4a117cf6b9a" />
-  <link rel="stylesheet" href="assets/polish.css?v=0c7b54c9634e" />
+  <link rel="stylesheet" href="assets/polish.css?v=90fc2462c667" />
 
   <style>
     html { scroll-behavior: smooth; }
@@ -238,7 +240,7 @@
 <main id="main" class="assessment-refined">
   <section class="relative assessment-hero">
     <div class="relative min-h-[360px] lg:min-h-[440px] flex items-end overflow-hidden">
-      <img fetchpriority="high" src="assets/rating-hero.jpg" alt="Φωτεινός χώρος αξιολόγησης και θεραπευτικών δραστηριοτήτων στη ΣΥΝΟΙΔΑ" class="absolute inset-0 w-full h-full object-cover" />
+      <img fetchpriority="high" src="assets/rating-hero.jpg" srcset="assets/rating-hero-800.webp 800w, assets/rating-hero-1600.webp 1600w" sizes="(max-width: 1023px) 100vw, 1152px" alt="Φωτεινός χώρος αξιολόγησης και θεραπευτικών δραστηριοτήτων στη ΣΥΝΟΙΔΑ" class="absolute inset-0 w-full h-full object-cover" />
       <div class="absolute inset-0 hero-scrim-b"></div>
       <div class="reveal relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full pb-12 pt-28">
         <nav aria-label="Breadcrumb" class="flex items-center gap-2 text-sm text-white/85 mb-4"><a href="index.html" class="hover:text-white">Αρχική</a><span aria-hidden="true">/</span><span class="text-white font-semibold" aria-current="page">Αξιολόγηση</span></nav>
@@ -257,7 +259,7 @@
         <p>Οι δικές σας παρατηρήσεις είναι ουσιαστικό μέρος της διαδικασίας.</p>
         <a class="assessment-button" href="contact-us.html#contact-centres">Μιλήστε μαζί μας <span aria-hidden="true">→</span></a>
       </div>
-      <figure class="reveal assessment-photo"><img src="assets/rating-materials.jpg" width="1280" height="853" loading="lazy" decoding="async" alt="Υλικό αξιολόγησης WISC-V σε γραφείο της ΣΥΝΟΙΔΑ" /><figcaption>Συζήτηση, παρατήρηση και κατάλληλα εργαλεία αξιολόγησης.</figcaption></figure>
+      <figure class="reveal assessment-photo"><img src="assets/rating-materials.jpg" srcset="assets/rating-materials-800.webp 800w, assets/rating-materials-1600.webp 1600w" sizes="(max-width: 1023px) 100vw, 1152px" width="1280" height="853" loading="lazy" decoding="async" alt="Υλικό αξιολόγησης WISC-V σε γραφείο της ΣΥΝΟΙΔΑ" /><figcaption>Συζήτηση, παρατήρηση και κατάλληλα εργαλεία αξιολόγησης.</figcaption></figure>
     </div>
   </section>
 
@@ -271,7 +273,7 @@
           <li class="reveal"><span class="assessment-step-number" aria-hidden="true">03</span><div><h3>Σας εξηγούμε τα ευρήματα</h3><p>Συζητάμε μαζί σας την εικόνα που διαμορφώθηκε, τι διευκολύνει το παιδί και πού χρειάζεται υποστήριξη. Υπάρχει χώρος για τις δικές σας ερωτήσεις και παρατηρήσεις.</p></div></li>
           <li class="reveal"><span class="assessment-step-number" aria-hidden="true">04</span><div><h3>Σχεδιάζουμε τα επόμενα βήματα</h3><p>Με βάση τα ευρήματα και τις προτεραιότητες της οικογένειας, προτείνουμε στόχους και κατάλληλο πρόγραμμα υποστήριξης. Οι στόχοι επανεξετάζονται στην πορεία.</p></div></li>
         </ol>
-        <figure class="reveal assessment-photo assessment-process-photo"><img src="assets/rating-process.jpg" width="1280" height="853" loading="lazy" decoding="async" alt="Εγχειρίδια και υλικά του Movement ABC-2 σε γραφείο της ΣΥΝΟΙΔΑ" /><figcaption>Τα μέσα αξιολόγησης επιλέγονται με βάση την ηλικία και το αίτημα.</figcaption></figure>
+        <figure class="reveal assessment-photo assessment-process-photo"><img src="assets/rating-process.jpg" srcset="assets/rating-process-800.webp 800w, assets/rating-process-1600.webp 1600w" sizes="(max-width: 1023px) 100vw, 1152px" width="1280" height="853" loading="lazy" decoding="async" alt="Εγχειρίδια και υλικά του Movement ABC-2 σε γραφείο της ΣΥΝΟΙΔΑ" /><figcaption>Τα μέσα αξιολόγησης επιλέγονται με βάση την ηλικία και το αίτημα.</figcaption></figure>
       </div>
     </div>
   </section>
@@ -356,7 +358,7 @@
     <div class="border-t border-white/15">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-sm text-white/80">
         <p class="font-semibold tracking-wide">Αρτέμιδα · Σπάτα · Νέα Μάκρη · Μαραθώνας</p>
-        <p><a href="mailto:info@synoida.gr" class="hover:text-white transition">info@synoida.gr</a> · <a href="https://www.synoida.gr" target="_blank" rel="noopener" class="hover:text-white transition">www.synoida.gr</a></p>
+        <p><a href="mailto:info@synoida.gr" class="hover:text-white transition">info@synoida.gr</a> · <a href="https://www.synoida.gr" target="_blank" rel="noopener" class="hover:text-white transition">www.synoida.gr</a> · <a href="privacy.html" class="hover:text-white transition">Πολιτική απορρήτου</a></p>
       </div>
     </div>
   </footer>
