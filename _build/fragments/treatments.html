@@ -1,94 +1,88 @@
-<main>
-  <section class="relative hero-depth">
-    <div class="relative min-h-[360px] lg:min-h-[440px] flex items-end overflow-hidden">
-      <div class="hero-plane"><img fetchpriority="high" src="assets/treatments-hero.jpg" alt="Παιδί σε εξειδικευμένη θεραπευτική συνεδρία στη ΣΥΝΟΙΔΑ" /></div>
+<main id="main" class="therapies-refined">
+  <section class="relative hero-depth therapies-hero">
+    <div class="relative flex items-end overflow-hidden">
+      <div class="hero-plane"><img fetchpriority="high" src="assets/treatments-hero.jpg" alt="Παιδικό τραπέζι με εκπαιδευτικά παιχνίδια και κάρτες σε χώρο της ΣΥΝΟΙΔΑ" /></div>
       <div class="absolute inset-0 hero-scrim-b"></div>
-      <div class="reveal relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full pb-12 pt-28">
-        <nav aria-label="Breadcrumb" class="flex items-center gap-2 text-sm text-white/85 mb-4"><a href="index.html" class="hover:text-white">Αρχική</a><span aria-hidden="true">/</span><span class="text-white font-semibold" aria-current="page">Θεραπείες</span></nav>
-        <p class="kicker text-white/80 text-xs mb-3">Οι υπηρεσίες μας</p>
-        <h1 class="font-display font-bold text-white text-4xl sm:text-5xl lg:text-6xl leading-[1.1] max-w-3xl">Θεραπείες</h1>
+      <div class="reveal relative therapies-wrap therapies-hero-content">
+        <nav class="therapies-breadcrumb" aria-label="Breadcrumb"><a href="index.html">Αρχική</a><span aria-hidden="true">/</span><span aria-current="page">Θεραπείες</span></nav>
+        <p class="therapies-eyebrow">ΣΥΝΟΙΔΑ · Ειδικές θεραπείες</p>
+        <h1>Θεραπείες για παιδιά<br>και εφήβους.</h1>
+        <p class="therapies-hero-copy">Η υποστήριξη ξεκινά από το παιδί: από όσα μπορεί, όσα το δυσκολεύουν και όσα έχουν σημασία στην καθημερινότητά του.</p>
+        <div class="therapies-hero-actions"><a href="#our-therapies" class="therapies-button">Γνωρίστε τις θεραπείες <span aria-hidden="true">↓</span></a><a href="#where-to-start" class="therapies-light-link">Δεν ξέρω από πού να ξεκινήσω <span aria-hidden="true">↗</span></a></div>
       </div>
     </div>
   </section>
 
-  <section class="py-16 lg:py-24 bg-white">
-    <div class="reveal max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <p class="kicker text-green text-xs mb-3">Εξατομικευμένη φροντίδα</p>
-      <h2 class="font-display font-bold text-ink text-3xl sm:text-4xl leading-tight">Για κάθε παιδί σχεδιάζουμε ένα <span class="text-green">εξατομικευμένο πρόγραμμα παρέμβασης.</span></h2>
-      <div class="prose-syn mt-5 text-[16px] text-ink/85"><p>Η πορεία ξεκινά πάντα με την αξιολόγηση: γνωρίζουμε το παιδί, ακούμε την οικογένεια και σχεδιάζουμε μαζί το πλάνο παρέμβασης. Οι υπηρεσίες μας συνεργάζονται στενά μεταξύ τους: συχνά ένα παιδί συνδυάζει δύο ή περισσότερες, ανάλογα με τις ανάγκες του.</p></div>
-      <p class="mt-4"><a href="about-us.html#pos-xekiname" class="inline-flex items-center gap-2 text-grey font-semibold hover:text-green transition">Δείτε πώς ξεκινάμε, βήμα-βήμα <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+  <section class="therapies-intro therapies-section">
+    <div class="therapies-wrap therapies-intro-layout">
+      <div class="reveal"><p class="therapies-eyebrow">Η προσέγγισή μας</p><h2>Ένα παιδί.<br>Η δική του διαδρομή.</h2></div>
+      <div class="reveal d1"><p>Πρώτα ακούμε εσάς και γνωρίζουμε το παιδί μέσα από την αξιολόγηση. Έπειτα συζητάμε μαζί σας ποια υποστήριξη ανταποκρίνεται στις ανάγκες του.</p><p>Όπου χρειάζεται, οι ειδικότητες συνεργάζονται σε ένα εξατομικευμένο πρόγραμμα, με κοινούς στόχους και επικοινωνία με την οικογένεια.</p><a href="about-us.html#pos-xekiname" class="therapies-text-link">Πώς ξεκινάμε, βήμα βήμα <span aria-hidden="true">↗</span></a></div>
     </div>
   </section>
 
-  <section class="py-16 lg:py-24 bg-mist">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <a href="treatment-speech.html" class="svc-card reveal block rounded-3xl bg-white ring-1 ring-grey/10 shadow-card">
-          <span class="svc-media"><img loading="lazy" decoding="async" src="assets/speech-detail.jpg" alt="Χώρος λογοθεραπείας" /><span class="svc-icon grid place-items-center w-14 h-14 rounded-full bg-green text-white"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4L3 21l1.1-3.9A8.4 8.4 0 1 1 21 11.5Z"/></svg></span></span>
-          <div class="svc-body">
-                    <h3 class="font-display font-bold text-ink text-xl mb-2.5">Λογοθεραπεία</h3>
-          <p class="text-ink/85 leading-relaxed text-[15px]">Βοηθά το παιδί να κατανοεί και να εκφράζεται, από την άρθρωση και το λεξιλόγιο έως τον κοινωνικό λόγο, ώστε να επικοινωνεί με αυτοπεποίθηση στην καθημερινότητά του.</p>
-          <span class="mt-5 inline-flex items-center gap-2 text-grey font-semibold text-sm">Περισσότερα <svg class="arrow w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-          </div>
-        </a>
-        <a href="treatment-occupational.html" class="svc-card reveal d1 block rounded-3xl bg-white ring-1 ring-grey/10 shadow-card">
-          <span class="svc-media"><img loading="lazy" decoding="async" src="assets/occupational-detail.jpg" alt="Αίθουσα εργοθεραπείας" /><span class="svc-icon grid place-items-center w-14 h-14 rounded-full bg-red text-white"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 11V6a2 2 0 0 0-4 0M14 10V4a2 2 0 0 0-4 0v2M10 10.5V6a2 2 0 0 0-4 0v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></svg></span></span>
-          <div class="svc-body">
-                    <h3 class="font-display font-bold text-ink text-xl mb-2.5">Εργοθεραπεία</h3>
-          <p class="text-ink/85 leading-relaxed text-[15px]">Ενισχύει την αδρή και λεπτή κίνηση, τις αισθητηριακές δεξιότητες και την αυτοεξυπηρέτηση, ώστε το παιδί να συμμετέχει με αυτονομία στο παιχνίδι, στο σχολείο και στην καθημερινή ζωή.</p>
-          <span class="mt-5 inline-flex items-center gap-2 text-grey font-semibold text-sm">Περισσότερα <svg class="arrow w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-          </div>
-        </a>
-        <a href="treatment-special.html" class="svc-card reveal d2 block rounded-3xl bg-white ring-1 ring-grey/10 shadow-card">
-          <span class="svc-media"><img loading="lazy" decoding="async" src="assets/special-detail.jpg" alt="Αίθουσα ειδικής αγωγής" /><span class="svc-icon grid place-items-center w-14 h-14 rounded-full bg-blue text-white"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7l10-4 10 4-10 4Z"/><path d="M6 9v5c0 1.5 3 3 6 3s6-1.5 6-3V9"/><path d="M22 7v6"/></svg></span></span>
-          <div class="svc-body">
-                    <h3 class="font-display font-bold text-ink text-xl mb-2.5">Ειδική Αγωγή</h3>
-          <p class="text-ink/85 leading-relaxed text-[15px]">Στηρίζει παιδιά με μαθησιακές δυσκολίες στην οργάνωση της σκέψης, την ανάγνωση, τη γραφή και τα μαθηματικά, με εξατομικευμένους τρόπους μάθησης που χτίζουν αυτοπεποίθηση.</p>
-          <span class="mt-5 inline-flex items-center gap-2 text-grey font-semibold text-sm">Περισσότερα <svg class="arrow w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-          </div>
-        </a>
-        <a href="treatment-psychotherapy.html" class="svc-card reveal block rounded-3xl bg-white ring-1 ring-grey/10 shadow-card">
-          <span class="svc-media"><img loading="lazy" decoding="async" src="assets/psychotherapy-detail.jpg" alt="Γραφείο ψυχοθεραπείας" /><span class="svc-icon grid place-items-center w-14 h-14 rounded-full bg-orange text-white"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.35-7-10a4 4 0 0 1 7-2.65A4 4 0 0 1 19 11c0 5.65-7 10-7 10Z"/></svg></span></span>
-          <div class="svc-body">
-                    <h3 class="font-display font-bold text-ink text-xl mb-2.5">Ψυχοθεραπεία</h3>
-          <p class="text-ink/85 leading-relaxed text-[15px]">Δίνει στο παιδί χώρο να αναγνωρίσει και να διαχειριστεί το άγχος, τον θυμό και τα δύσκολα συναισθήματα, ενισχύοντας την αυτοεκτίμηση και τις σχέσεις του με τους άλλους.</p>
-          <span class="mt-5 inline-flex items-center gap-2 text-grey font-semibold text-sm">Περισσότερα <svg class="arrow w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-          </div>
-        </a>
-        <a href="treatment-consulting.html" class="svc-card reveal d1 block rounded-3xl bg-white ring-1 ring-grey/10 shadow-card">
-          <span class="svc-media"><img loading="lazy" decoding="async" src="assets/consulting-detail.jpg" alt="Χώρος συμβουλευτικής" /><span class="svc-icon grid place-items-center w-14 h-14 rounded-full bg-grey text-white"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4L3 21l1.1-3.9A8.4 8.4 0 1 1 21 11.5Z"/><path d="M8 10h8M8 13.5h5"/></svg></span></span>
-          <div class="svc-body">
-                    <h3 class="font-display font-bold text-ink text-xl mb-2.5">Συμβουλευτική</h3>
-          <p class="text-ink/85 leading-relaxed text-[15px]">Δίπλα στον γονιό: με την καθοδήγηση εξειδικευμένων ψυχολόγων, κατανοείτε τις ανάγκες του παιδιού σας και αποκτάτε πρακτικά εργαλεία για τις δύσκολες στιγμές της καθημερινότητας.</p>
-          <span class="mt-5 inline-flex items-center gap-2 text-grey font-semibold text-sm">Περισσότερα <svg class="arrow w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-          </div>
-        </a>
-        <a href="treatment-play.html" class="svc-card reveal d2 block rounded-3xl bg-white ring-1 ring-grey/10 shadow-card">
-          <span class="svc-media"><img loading="lazy" decoding="async" src="assets/play-room.jpg" alt="Χώρος παιγνιοθεραπείας" /><span class="svc-icon grid place-items-center w-14 h-14 rounded-full bg-orange text-white"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 14.5s1.5 2 4 2 4-2 4-2"/><path d="M9 10h.01M15 10h.01"/></svg></span></span>
-          <div class="svc-body">
-                    <h3 class="font-display font-bold text-ink text-xl mb-2.5">Παιγνιοθεραπεία</h3>
-          <p class="text-ink/85 leading-relaxed text-[15px]">Η παιγνιοθεραπεία αξιοποιεί το παιχνίδι ως φυσικό μέσο έκφρασης, βοηθώντας τα παιδιά να επεξεργαστούν συναισθήματα και εμπειρίες και να αναπτύξουν τις δεξιότητές τους σε ένα ασφαλές περιβάλλον.</p>
-          <span class="mt-5 inline-flex items-center gap-2 text-grey font-semibold text-sm">Περισσότερα <svg class="arrow w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-          </div>
-        </a>
-        <a href="treatment-social.html" class="svc-card reveal d3 lg:col-start-2 block rounded-3xl bg-white ring-1 ring-grey/10 shadow-card">
-          <span class="svc-media"><img loading="lazy" decoding="async" src="assets/social-detail.jpg" alt="Αίθουσα ομάδων κοινωνικών δεξιοτήτων" /><span class="svc-icon grid place-items-center w-14 h-14 rounded-full bg-green text-white"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M2 20v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1"/><path d="M16.5 14a4 4 0 0 1 4 4v2"/></svg></span></span>
-          <div class="svc-body">
-                    <h3 class="font-display font-bold text-ink text-xl mb-2.5">Ομάδες Κοινωνικών Δεξιοτήτων</h3>
-          <p class="text-ink/85 leading-relaxed text-[15px]">Μέσα στην ομάδα, με συνομηλίκους, το παιδί εξασκεί την επικοινωνία, τη συνεργασία και την ενσυναίσθηση: δεξιότητες που μεταφέρονται στο σχολείο, στο παιχνίδι και στις φιλίες του.</p>
-          <span class="mt-5 inline-flex items-center gap-2 text-grey font-semibold text-sm">Περισσότερα <svg class="arrow w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-          </div>
-        </a>
-      </div>
+  <section id="our-therapies" class="therapies-directory therapies-section">
+    <div class="therapies-wrap therapies-directory-layout">
+      <div class="therapies-guide"><p class="therapies-eyebrow">Γνωρίστε τις υπηρεσίες</p><h2>Οι θεραπείες μας</h2><nav aria-label="Μετάβαση σε θεραπεία"><ul>
+<li><a href="#therapy-speech" style="--therapy-color:#8DC63F"><span class="therapies-nav-dot" aria-hidden="true"></span>Λογοθεραπεία</a></li>
+<li><a href="#therapy-occupational" style="--therapy-color:#ED1C24"><span class="therapies-nav-dot" aria-hidden="true"></span>Εργοθεραπεία</a></li>
+<li><a href="#therapy-special" style="--therapy-color:#00AEEF"><span class="therapies-nav-dot" aria-hidden="true"></span>Ειδική Αγωγή</a></li>
+<li><a href="#therapy-psychotherapy" style="--therapy-color:#F7941D"><span class="therapies-nav-dot" aria-hidden="true"></span>Ψυχοθεραπεία</a></li>
+<li><a href="#therapy-consulting" style="--therapy-color:#58595B"><span class="therapies-nav-dot" aria-hidden="true"></span>Συμβουλευτική γονέων</a></li>
+<li><a href="#therapy-play" style="--therapy-color:#F7941D"><span class="therapies-nav-dot" aria-hidden="true"></span>Παιγνιοθεραπεία</a></li>
+<li><a href="#therapy-social" style="--therapy-color:#8DC63F"><span class="therapies-nav-dot" aria-hidden="true"></span>Ομάδες Κοινωνικών Δεξιοτήτων</a></li>
+</ul></nav></div>
+<div class="therapies-entries">
+<article id="therapy-speech" class="therapy-entry reveal" style="--therapy-color:#8DC63F" aria-labelledby="therapy-title-speech">
+  <a class="therapy-entry-link" href="treatment-speech.html" aria-labelledby="therapy-title-speech" aria-describedby="therapy-copy-speech">
+    <div class="therapy-photo"><img loading="lazy" decoding="async" src="assets/speech-detail.jpg" alt="Υλικό λογοθεραπείας επάνω σε μπλε παιδικό τραπέζι" /><span class="therapy-number" aria-hidden="true">01</span></div>
+    <div class="therapy-copy"><p class="therapy-intent">Επικοινωνία στην καθημερινή ζωή</p><h3 id="therapy-title-speech">Λογοθεραπεία</h3><p id="therapy-copy-speech">Στηρίζουμε την κατανόηση και την έκφραση του λόγου, την ομιλία και την επικοινωνία. Οι στόχοι συνδέονται με όσα χρειάζεται το παιδί για να εκφράζει τις ανάγκες του, να συζητά και να συμμετέχει.</p><p class="therapy-topics">Λόγος · Ομιλία · Επικοινωνία</p><span class="therapy-read">Γνωρίστε τη θεραπεία <span class="therapy-arrow" aria-hidden="true">↗</span></span></div>
+  </a>
+</article>
+<article id="therapy-occupational" class="therapy-entry reveal" style="--therapy-color:#ED1C24" aria-labelledby="therapy-title-occupational">
+  <a class="therapy-entry-link" href="treatment-occupational.html" aria-labelledby="therapy-title-occupational" aria-describedby="therapy-copy-occupational">
+    <div class="therapy-photo"><img loading="lazy" decoding="async" src="assets/occupational-detail.jpg" alt="Αίθουσα εργοθεραπείας με κούνιες, στρώματα και κινητικό εξοπλισμό" /><span class="therapy-number" aria-hidden="true">02</span></div>
+    <div class="therapy-copy"><p class="therapy-intent">Συμμετοχή, παιχνίδι και αυτονομία</p><h3 id="therapy-title-occupational">Εργοθεραπεία</h3><p id="therapy-copy-occupational">Δουλεύουμε δεξιότητες που στηρίζουν τη συμμετοχή στο παιχνίδι, στο σχολείο και στην αυτοεξυπηρέτηση. Η κίνηση, ο συντονισμός και η επεξεργασία των αισθητηριακών ερεθισμάτων εξετάζονται μέσα στην καθημερινότητα του παιδιού.</p><p class="therapy-topics">Κίνηση · Αυτοεξυπηρέτηση · Παιχνίδι</p><span class="therapy-read">Γνωρίστε τη θεραπεία <span class="therapy-arrow" aria-hidden="true">↗</span></span></div>
+  </a>
+</article>
+<article id="therapy-special" class="therapy-entry reveal" style="--therapy-color:#00AEEF" aria-labelledby="therapy-title-special">
+  <a class="therapy-entry-link" href="treatment-special.html" aria-labelledby="therapy-title-special" aria-describedby="therapy-copy-special">
+    <div class="therapy-photo"><img loading="lazy" decoding="async" src="assets/special-detail.jpg" alt="Εκπαιδευτικές κάρτες και υλικό μάθησης σε παιδικό τραπέζι" /><span class="therapy-number" aria-hidden="true">03</span></div>
+    <div class="therapy-copy"><p class="therapy-intent">Μάθηση με τον τρόπο που ταιριάζει στο παιδί</p><h3 id="therapy-title-special">Ειδική Αγωγή</h3><p id="therapy-copy-special">Υποστηρίζουμε την ανάγνωση, τη γραφή, τα μαθηματικά και την οργάνωση της μελέτης. Προσαρμόζουμε τον τρόπο δουλειάς στις μαθησιακές ανάγκες και στις δυνατότητες του παιδιού.</p><p class="therapy-topics">Ανάγνωση · Γραφή · Μαθηματικά</p><span class="therapy-read">Γνωρίστε τη θεραπεία <span class="therapy-arrow" aria-hidden="true">↗</span></span></div>
+  </a>
+</article>
+<article id="therapy-psychotherapy" class="therapy-entry reveal" style="--therapy-color:#F7941D" aria-labelledby="therapy-title-psychotherapy">
+  <a class="therapy-entry-link" href="treatment-psychotherapy.html" aria-labelledby="therapy-title-psychotherapy" aria-describedby="therapy-copy-psychotherapy">
+    <div class="therapy-photo"><img loading="lazy" decoding="async" src="assets/psychotherapy-detail.jpg" alt="Γραφείο με καθίσματα συζήτησης και πορτοκαλί τοίχους" /><span class="therapy-number" aria-hidden="true">04</span></div>
+    <div class="therapy-copy"><p class="therapy-intent">Χώρος για όσα νιώθει το παιδί</p><h3 id="therapy-title-psychotherapy">Ψυχοθεραπεία</h3><p id="therapy-copy-psychotherapy">Προσφέρουμε χώρο στο παιδί ή στον έφηβο να εκφράσει όσα το δυσκολεύουν και να επεξεργαστεί τα συναισθήματά του. Η δουλειά εστιάζει στις ανάγκες του, στις σχέσεις και στον τρόπο που βιώνει την καθημερινότητά του.</p><p class="therapy-topics">Συναισθήματα · Σχέσεις · Αυτοεκτίμηση</p><span class="therapy-read">Γνωρίστε τη θεραπεία <span class="therapy-arrow" aria-hidden="true">↗</span></span></div>
+  </a>
+</article>
+<article id="therapy-consulting" class="therapy-entry reveal" style="--therapy-color:#58595B" aria-labelledby="therapy-title-consulting">
+  <a class="therapy-entry-link" href="treatment-consulting.html" aria-labelledby="therapy-title-consulting" aria-describedby="therapy-copy-consulting">
+    <div class="therapy-photo"><img loading="lazy" decoding="async" src="assets/consulting-detail.jpg" alt="Φωτεινό γραφείο της ΣΥΝΟΙΔΑ με καθίσματα και παιδική γωνιά" /><span class="therapy-number" aria-hidden="true">05</span></div>
+    <div class="therapy-copy"><p class="therapy-intent">Υποστήριξη και για εσάς</p><h3 id="therapy-title-consulting">Συμβουλευτική γονέων</h3><p id="therapy-copy-consulting">Συζητάμε όσα σας απασχολούν στη σχέση με το παιδί: την επικοινωνία, τα όρια και τις δύσκολες στιγμές. Αναζητούμε μαζί τρόπους ανταπόκρισης που ταιριάζουν στις ανάγκες της οικογένειάς σας.</p><p class="therapy-topics">Γονεϊκός ρόλος · Επικοινωνία · Καθημερινότητα</p><span class="therapy-read">Γνωρίστε τη θεραπεία <span class="therapy-arrow" aria-hidden="true">↗</span></span></div>
+  </a>
+</article>
+<article id="therapy-play" class="therapy-entry reveal" style="--therapy-color:#F7941D" aria-labelledby="therapy-title-play">
+  <a class="therapy-entry-link" href="treatment-play.html" aria-labelledby="therapy-title-play" aria-describedby="therapy-copy-play">
+    <div class="therapy-photo"><img loading="lazy" decoding="async" src="assets/play-room.jpg" alt="Χώρος παιγνιοθεραπείας με παιχνίδια, φιγούρες και παιδικά καθίσματα" /><span class="therapy-number" aria-hidden="true">06</span></div>
+    <div class="therapy-copy"><p class="therapy-intent">Όταν το παιχνίδι γίνεται τρόπος έκφρασης</p><h3 id="therapy-title-play">Παιγνιοθεραπεία</h3><p id="therapy-copy-play">Αξιοποιούμε το παιχνίδι ως μέσο έκφρασης και θεραπευτικής επικοινωνίας. Μέσα στη σχέση με τον θεραπευτή, το παιδί βρίσκει χώρο να επεξεργαστεί εμπειρίες και συναισθήματα, με τρόπο που ταιριάζει στην ηλικία του.</p><p class="therapy-topics">Παιχνίδι · Έκφραση · Θεραπευτική σχέση</p><span class="therapy-read">Γνωρίστε τη θεραπεία <span class="therapy-arrow" aria-hidden="true">↗</span></span></div>
+  </a>
+</article>
+<article id="therapy-social" class="therapy-entry reveal" style="--therapy-color:#8DC63F" aria-labelledby="therapy-title-social">
+  <a class="therapy-entry-link" href="treatment-social.html" aria-labelledby="therapy-title-social" aria-describedby="therapy-copy-social">
+    <div class="therapy-photo"><img loading="lazy" decoding="async" src="assets/social-detail.jpg" alt="Χώρος της ΣΥΝΟΙΔΑ με καθιστικό, τραπέζι και υλικό δραστηριοτήτων" /><span class="therapy-number" aria-hidden="true">07</span></div>
+    <div class="therapy-copy"><p class="therapy-intent">Μαζί με άλλα παιδιά</p><h3 id="therapy-title-social">Ομάδες Κοινωνικών Δεξιοτήτων</h3><p id="therapy-copy-social">Μέσα από κοινές δραστηριότητες και παιχνίδι, τα παιδιά εξασκούν την επικοινωνία, τη συνεργασία και τη συμμετοχή σε μια ομάδα. Η καταλληλότητα της ομάδας συζητιέται με βάση τις ανάγκες κάθε παιδιού.</p><p class="therapy-topics">Συνεργασία · Επικοινωνία · Συμμετοχή</p><span class="therapy-read">Γνωρίστε τη θεραπεία <span class="therapy-arrow" aria-hidden="true">↗</span></span></div>
+  </a>
+</article>
+</div>
     </div>
   </section>
 
-  <section class="relative bg-alt overflow-hidden">
-    <div class="pointer-events-none absolute -top-20 -right-16 w-80 h-80 rounded-full bg-green/10 blur-2xl"></div>
-    <div class="pointer-events-none absolute -bottom-20 -left-16 w-80 h-80 rounded-full bg-blue/10 blur-2xl"></div>
-    <div class="reveal relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20 text-center">
-      <h2 class="font-display font-bold text-ink text-3xl sm:text-4xl leading-tight">Όταν το παιδί εξελίσσεται, <span class="text-green">ο κόσμος αλλάζει προς το καλύτερο.</span></h2>
-      <div class="mt-8"><a href="contact-us.html" class="inline-flex items-center gap-2 rounded-full bg-green px-8 py-4 text-grey text-lg font-bold shadow-soft hover:bg-[#7CB22E] transition">Επικοινωνήστε μαζί μας <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  <section id="where-to-start" class="therapies-help therapies-section">
+    <div class="therapies-wrap therapies-help-layout">
+      <div class="reveal"><p class="therapies-eyebrow">Το πρώτο βήμα</p><h2>Δεν είστε βέβαιοι<br>ποια θεραπεία χρειάζεται;</h2><p>Δεν χρειάζεται να επιλέξετε ειδικότητα μόνοι σας. Ξεκινάμε με μια συνάντηση μόνο με τον γονέα, για να ακούσουμε όσα τον απασχολούν και να συζητήσουμε πώς θα προχωρήσει η αξιολόγηση.</p></div>
+      <div class="reveal d1 therapies-help-actions"><a href="contact-us.html" class="therapies-help-primary"><span><small>Ας μιλήσουμε</small><strong>Επικοινωνήστε μαζί μας</strong></span><span aria-hidden="true">↗</span></a><a href="rating.html" class="therapies-help-secondary"><span><small>Μάθετε πριν έρθετε</small><strong>Πώς γίνεται η αξιολόγηση</strong></span><span aria-hidden="true">↗</span></a></div>
     </div>
   </section>
+  <div class="therapies-location-line"><p>Δίπλα σας στην Ανατολική Αττική</p><p>Αρτέμιδα · Σπάτα · Νέα Μάκρη · Μαραθώνας</p></div>
 </main>
