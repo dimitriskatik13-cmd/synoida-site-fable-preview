@@ -71,13 +71,9 @@ for outfile, (title, desc, page) in PAGES.items():
         out = out.replace('</body>', '  <script src="assets/stars-mark.js" defer></script>\n</body>', 1)
     if outfile == 'contact-us.html':
         out = out.replace('</body>', '  <script src="assets/contact.js" defer></script>\n</body>', 1)
-        mobile_phone = re.search(r'<a class="flex items-center gap-1.5 font-bold" href="tel:\+302106633333">[\s\S]*?</a>', out)
-        if not mobile_phone:
-            sys.exit('Contact mobile navigation target not found')
-        mobile_choice = mobile_phone.group().replace('href="tel:+302106633333"', 'href="#contact-centres"').replace('2106633333</a>', 'Επιλέξτε κέντρο</a>')
-        out = out.replace(mobile_phone.group(), mobile_choice, 1)
+        # the shared top bar now offers all four centres on every page; no page-specific swap needed
     # Content versions keep iterative previews fresh without changing images.
-    for asset in ('preview.css', 'stars-mark.js', 'contact.js'):
+    for asset in ('preview.css', 'polish.css', 'stars-mark.js', 'contact.js'):
         with open(os.path.join(ROOT, 'assets', asset), 'rb') as asset_file:
             version = hashlib.sha256(asset_file.read()).hexdigest()[:12]
         out = out.replace('"assets/%s"' % asset, '"assets/%s?v=%s"' % (asset, version))
