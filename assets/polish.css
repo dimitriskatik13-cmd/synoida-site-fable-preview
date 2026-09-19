@@ -175,5 +175,5 @@ details.phones>summary:focus-visible,.callbar-contact:focus-visible,.topbar-cent
 .svc-card[href*="psychotherapy"],.svc-card[href*="play"]{--rule:#F7941D}
 .svc-card[href*="consulting"]{--rule:#58595B}
 .home-refined .svc-media::after,.svc-media::after{left:0;right:0;bottom:-1.5px;height:3px;border-radius:0;background:var(--rule)}
-.svc-card .svc-media .svc-icon{z-index:1;box-shadow:0 0 0 5px #fff}
-.svc-card .svc-media .svc-icon::after{content:"";position:absolute;inset:-8px;border-radius:50%;border:3px solid var(--rule);clip-path:inset(0 0 50% 0);pointer-events:none}
+.svc-card .svc-media .svc-icon{z-index:1;box-shadow:0 0 0 3px #fff}
+.svc-card .svc-media .svc-icon::after{content:"";position:absolute;inset:-6px;border-radius:50%;border:3px solid var(--rule);clip-path:inset(0 0 50% 0);pointer-events:none}
