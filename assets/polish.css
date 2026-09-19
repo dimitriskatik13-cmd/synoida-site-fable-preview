@@ -115,3 +115,18 @@ details.phones>summary:focus-visible,.callbar-contact:focus-visible,.topbar-cent
   header a img{height:44px}
   header .flex.items-center.justify-between{gap:1rem}
 }
+
+/* ---- 12. «Πότε να απευθυνθείτε» restored on Εργοθεραπεία, Ειδική Αγωγή, Ψυχοθεραπεία (same family as the speech page) ---- */
+.specialty-signs{background:#f3f7ed}
+.specialty-signs-layout{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:start}
+.specialty-signs-intro{position:sticky;top:120px}
+.specialty-signs-intro p{margin:0 0 14px}
+.specialty-context-note{font-size:13px;line-height:1.8;border-left:2px solid var(--specialty-color,#8DC63F);padding-left:16px;margin-top:22px}
+.specialty-signs-list{margin:0;padding:0;list-style:none}
+.specialty-signs-list li{display:grid;grid-template-columns:26px minmax(0,1fr);gap:16px;border-top:1px solid rgba(88,89,91,.19);padding:18px 0;align-items:start}
+.specialty-signs-list li:last-child{border-bottom:1px solid rgba(88,89,91,.19)}
+.specialty-signs-list li>span{display:grid;place-items:center;width:24px;height:24px;border-radius:999px;background:var(--specialty-color,#8DC63F);color:#fff;font-size:13px;font-weight:700;margin-top:2px}
+.specialty-signs-list p{margin:0;font-size:16px;line-height:1.65;color:#303133}
+@media (max-width:1023px){.specialty-signs-layout{grid-template-columns:1fr;gap:28px}.specialty-signs-intro{position:static}}
+/* team numbers on «Σχετικά» */
+.about-team ul li b{font-family:Comfortaa,system-ui,sans-serif;font-size:1.35em;color:#8DC63F;margin-right:6px}
