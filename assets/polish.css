@@ -166,3 +166,7 @@ details.phones>summary:focus-visible,.callbar-contact:focus-visible,.topbar-cent
 
 /* ---- 17. Homepage hero: a touch more contrast behind the text, the right side of the photo stays bright ---- */
 .home-refined .home-hero .hero-scrim{background:linear-gradient(90deg,rgba(35,36,34,.80),rgba(35,36,34,.58) 36%,rgba(35,36,34,.18) 60%,rgba(35,36,34,.04) 78%)}
+
+/* ---- 18. Therapy cards: the coloured rule no longer runs through the icon; it starts to its right, and the icon keeps a clean white ring ---- */
+.home-refined .svc-media::after,.svc-media::after{left:calc(1.5rem + 3.5rem + 14px);right:0;height:3px;border-radius:2px}
+.svc-card .svc-media .svc-icon{z-index:1;box-shadow:0 0 0 5px #fff}

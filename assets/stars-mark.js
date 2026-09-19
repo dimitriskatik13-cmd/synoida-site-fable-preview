@@ -51,7 +51,7 @@
     var lead=Math.round(height*0.6),top=Math.round(b.top+scroll-lead),h=Math.max(1,Math.round(b.height+lead));
     var density=Math.min(window.devicePixelRatio||1,w<768?1.25:1.5,Math.sqrt(2500000/(Math.max(w,1)*h)));
     vh=height;cvTop=top;markTop=r.top+scroll;L=r.left;T=markTop-top;MW=r.width;MH=r.height;
-    end=Math.max(vh*0.18,markTop-(docHeight-vh)+24);span=Math.max(vh*0.88-end,vh*0.3);
+    end=Math.max(vh*0.50,markTop-(docHeight-vh)+24);span=Math.max(vh*1.0-end,vh*0.3);   /* starts as the mark enters the screen, fully formed when its top reaches mid-screen */
     if(W!==w||CH!==h||dpr!==density){
       W=w;CH=h;dpr=density;cv.style.width=w+'px';cv.style.height=h+'px';
       cv.width=Math.max(1,Math.round(w*dpr));cv.height=Math.max(1,Math.round(h*dpr));
