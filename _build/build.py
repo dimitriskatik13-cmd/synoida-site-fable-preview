@@ -90,8 +90,10 @@ for outfile, (title, desc, page) in PAGES.items():
     def _srcset(m):
         tag, name = m.group(0), m.group(1)
         if 'srcset=' in tag or not os.path.exists(os.path.join(ROOT, 'assets', name + '-800.webp')): return tag
-        return tag.replace('src="assets/%s.jpg"' % name,
-            'src="assets/%s.jpg" srcset="assets/%s-800.webp 800w, assets/%s-1600.webp 1600w" sizes="(max-width: 1023px) 100vw, 1152px"' % (name, name, name), 1)
+        full = os.path.exists(os.path.join(ROOT, 'assets', name + '-1920.webp'))   # hero-size photo: full width, Retina gets the largest file
+        srcset = 'assets/%s-800.webp 800w, assets/%s-1600.webp 1600w' % (name, name) + (', assets/%s-1920.webp 1920w' % name if full else '')
+        sizes = '100vw' if full else '(max-width: 1023px) 100vw, 1152px'
+        return tag.replace('src="assets/%s.jpg"' % name, 'src="assets/%s.jpg" srcset="%s" sizes="%s"' % (name, srcset, sizes), 1)
     out = re.sub(r'<img\b[^>]*\bsrc="assets/([A-Za-z0-9_-]+)\.jpg"[^>]*>', _srcset, out)
     if '--final' in sys.argv:
         out = out.replace('  <!-- demo deployment: εκτός ευρετηρίασης -->\n  <meta name="robots" content="noindex, nofollow" />\n', '')
