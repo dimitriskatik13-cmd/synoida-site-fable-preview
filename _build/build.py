@@ -11,7 +11,7 @@ ROOT = os.path.dirname(HERE)                      # example/
 TEMPLATE = open(os.path.join(HERE, 'template.html'), encoding='utf-8').read()
 FRAG = os.path.join(HERE, 'fragments')
 
-BASE_URL = 'https://dimitriskatik13-cmd.github.io/synoida-site-preview/'
+BASE_URL = 'https://dimitriskatik13-cmd.github.io/synoida-site-fable-preview/'
 DEFAULT_OG = 'assets/hero-room.jpg'
 MARKER = ('<!-- ΠΑΡΑΓΕΤΑΙ ΑΥΤΟΜΑΤΑ από _build/build.py — μην επεξεργάζεσαι αυτό το αρχείο. '
           'Άλλαξε το _build/fragments/<σελίδα>.html ή το _build/template.html και τρέξε: python3 _build/build.py -->')
