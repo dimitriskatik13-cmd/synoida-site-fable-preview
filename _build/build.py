@@ -92,9 +92,12 @@ for outfile, (title, desc, page) in PAGES.items():
         if 'srcset=' in tag or not os.path.exists(os.path.join(ROOT, 'assets', name + '-800.webp')): return tag
         full = os.path.exists(os.path.join(ROOT, 'assets', name + '-1920.webp'))   # hero-size photo: full width, Retina gets the largest file
         srcset = 'assets/%s-800.webp 800w, assets/%s-1600.webp 1600w' % (name, name) + (', assets/%s-1920.webp 1920w' % name if full else '')
+        if os.path.exists(os.path.join(ROOT, 'assets', name + '-2880.webp')): srcset += ', assets/%s-2880.webp 2880w' % name
         sizes = '100vw' if full else '(max-width: 1023px) 100vw, 1152px'
         return tag.replace('src="assets/%s.jpg"' % name, 'src="assets/%s.jpg" srcset="%s" sizes="%s"' % (name, srcset, sizes), 1)
     out = re.sub(r'<img\b[^>]*\bsrc="assets/([A-Za-z0-9_-]+)\.jpg"[^>]*>', _srcset, out)
+    # το cut-out προσκήνιο του hero έχει δικές του εκδόσεις
+    out = out.replace('src="assets/hero-room-fg.webp" alt=""', 'src="assets/hero-room-fg.webp" srcset="assets/hero-room-fg-1920.webp 1920w, assets/hero-room-fg-2880.webp 2880w" sizes="100vw" alt=""', 1)
     if '--final' in sys.argv:
         out = out.replace('  <!-- demo deployment: εκτός ευρετηρίασης -->\n  <meta name="robots" content="noindex, nofollow" />\n', '')
         out = re.sub(r'<link rel="stylesheet" href="assets/preview\.css[^"]*" />\s*<link rel="stylesheet" href="assets/polish\.css[^"]*" />', '<link rel="stylesheet" href="assets/bundle.min.css" />', out)
