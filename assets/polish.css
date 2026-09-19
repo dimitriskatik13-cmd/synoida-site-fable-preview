@@ -62,7 +62,6 @@ details.phones .lbl-m{display:none}
   .home-refined .home-hero>div{min-height:0}
   .home-refined .home-hero>div>.reveal{padding-top:36px;padding-bottom:56px}
   .home-refined .home-hero h1{font-size:31px;line-height:1.12}
-  .home-refined .home-hero h1 span{margin-top:6px}
   .home-refined .home-hero .kicker{margin-bottom:10px}
   .home-refined .home-hero .preview-hero-copy{font-size:14px;line-height:1.6;margin-top:14px;max-width:100%}
   .home-refined .home-hero .whitespace-nowrap{font-size:14px;margin-top:14px}
@@ -153,3 +152,8 @@ details.phones>summary:focus-visible,.callbar-contact:focus-visible,.topbar-cent
 .privacy-wrap p,.privacy-wrap li{line-height:1.8;color:#58595B}
 .privacy-wrap ul{padding-left:1.2rem}
 .privacy-wrap .todo{background:#FBF7F0;border-left:3px solid #F7941D;padding:10px 14px;border-radius:8px;font-size:14px}
+
+/* ---- 15. Hero: subtitle removed; the two lines of the headline sit closer together ---- */
+.home-refined .home-hero h1{line-height:1.06}
+.home-refined .home-hero h1 span{margin-top:-0.04em;line-height:1.06}
+.home-refined .home-hero .whitespace-nowrap{margin-top:22px}
