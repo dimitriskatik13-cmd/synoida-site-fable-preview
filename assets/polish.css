@@ -130,3 +130,8 @@ details.phones>summary:focus-visible,.callbar-contact:focus-visible,.topbar-cent
 @media (max-width:1023px){.specialty-signs-layout{grid-template-columns:1fr;gap:28px}.specialty-signs-intro{position:static}}
 /* team numbers on «Σχετικά» */
 .about-team ul li b{font-family:Comfortaa,system-ui,sans-serif;font-size:1.35em;color:#8DC63F;margin-right:6px}
+
+/* ---- 13. Value cards are H3 now (the H2 list of the homepage had 12 entries) ---- */
+.preview-value-copy h3{font-family:Inter,system-ui,sans-serif;font-size:17px;line-height:1.5;font-weight:700;text-wrap:initial;margin:0 0 8px;color:#303133}
+@media (max-width:1023px){.home-value:nth-child(-n+2) h3{font-size:17px}}
+@media (max-width:639px){.preview-value-copy h3{font-size:17px}}

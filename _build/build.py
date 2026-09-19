@@ -77,6 +77,9 @@ for outfile, (title, desc, page) in PAGES.items():
         with open(os.path.join(ROOT, 'assets', asset), 'rb') as asset_file:
             version = hashlib.sha256(asset_file.read()).hexdigest()[:12]
         out = out.replace('"assets/%s"' % asset, '"assets/%s?v=%s"' % (asset, version))
+    if '--final' in sys.argv:
+        # Παραγωγή χωρίς το στρώμα δοκιμής: badge, ετικέτες προσωρινών εικόνων, σημειώσεις διάταξης.
+        out = re.sub(r'<(p|figcaption|aside|span|small|div)\b[^>]*\bdata-preview-only\b[^>]*>.*?</\1>', '', out, flags=re.S)
     if outfile == '404.html':
         # το 404 σερβίρεται από το GitHub Pages σε οποιοδήποτε path — τα σχετικά links θέλουν σταθερή βάση
         out = out.replace('<head>', '<head>\n  <base href="%s" />' % BASE_URL, 1)
