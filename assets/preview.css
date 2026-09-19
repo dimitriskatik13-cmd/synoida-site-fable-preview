@@ -339,15 +339,15 @@ body[data-page="treatments"]>header{background:rgba(255,255,255,.96)}
 .speech-refined{background:#fff;color:#58595B}
 .speech-wrap{max-width:1200px;width:100%;padding-inline:40px;margin-inline:auto}
 .speech-section{padding-block:90px;scroll-margin-top:100px}
-.speech-refined h2{font-size:clamp(29px,3.25vw,43px);font-weight:650;line-height:1.4;letter-spacing:-.04em;margin:0 0 24px;text-wrap:balance}
+.speech-refined h2{font-size:clamp(27px,2.7vw,34px);font-weight:600;line-height:1.4;letter-spacing:-.04em;margin:0 0 24px;text-wrap:balance}
 .speech-refined h3{font-size:20px;font-weight:650;line-height:1.5;letter-spacing:-.025em;margin:0 0 12px;text-wrap:balance}
 .speech-refined p{font-size:16px;line-height:1.85;margin:0 0 18px;text-wrap:pretty}
 .speech-refined .speech-eyebrow{font-size:11px;font-weight:650;line-height:1.7;letter-spacing:.1em;text-transform:uppercase;margin-bottom:24px}
-.speech-hero>div{min-height:610px}
+.speech-hero>div{min-height:440px}
 .speech-hero .hero-scrim-b{background:linear-gradient(90deg,rgba(35,39,36,.88),rgba(35,39,36,.6) 65%,rgba(35,39,36,.22))}
 .speech-hero>div>.speech-hero-content{padding-top:55px;padding-bottom:50px;color:white}
 .speech-breadcrumb{display:flex;flex-wrap:wrap;gap:12px;font-size:12px;margin-bottom:36px}
-.speech-hero h1{font-size:clamp(43px,6.3vw,80px);line-height:1.2;letter-spacing:-.055em;font-weight:650;margin:0 0 22px}
+.speech-hero h1{font-size:clamp(40px,5vw,64px);line-height:1.2;letter-spacing:-.055em;font-weight:650;margin:0 0 22px}
 .speech-refined .speech-hero-line{font-family:Comfortaa,system-ui,sans-serif;font-size:clamp(23px,2.6vw,33px);line-height:1.5;color:#fff;margin-bottom:20px;letter-spacing:-.035em}
 .speech-refined .speech-hero-copy{max-width:620px;font-size:16px;line-height:1.85;margin-bottom:16px}
 .speech-hero-link{display:inline-flex;align-items:center;gap:36px;padding:12px 0 8px;min-height:44px;font-size:13px;font-weight:600;border-bottom:1px solid #ffffff80}
@@ -377,7 +377,7 @@ body[data-page="treatments"]>header{background:rgba(255,255,255,.96)}
 .speech-area-list li{display:grid;grid-template-columns:65px 1fr 1.1fr;align-items:start;gap:32px;padding:30px 0;border-top:1px solid #58595B30}
 .speech-area-list li:last-child{border-bottom:1px solid #58595B30}
 .speech-area-number{font-family:Comfortaa,system-ui,sans-serif;font-size:30px;font-weight:400;letter-spacing:-.06em;color:#58595B}
-.speech-area-list h3{font-size:24px;margin:3px 0 0;line-height:1.5}
+.speech-area-list h3{font-size:21px;margin:3px 0 0;line-height:1.5}
 .speech-area-list p{font-size:15px;margin:3px 0 0;line-height:1.85}
 .speech-practice{background:#58595B;color:#fff}
 .speech-practice-layout{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
@@ -398,7 +398,7 @@ body[data-page="treatments"]>header{background:rgba(255,255,255,.96)}
 .speech-faq details[open] summary{padding-bottom:12px}
 .speech-faq p{font-size:14px;margin:0;padding:0 35px 26px 0}
 .speech-close{text-align:center;background:#f5f5f5}
-.speech-close h2{font-size:clamp(32px,4vw,48px)}
+.speech-close h2{font-size:clamp(27px,2.7vw,34px)}
 .speech-close p{max-width:580px;margin-inline:auto}
 .speech-button{display:inline-flex;justify-content:center;align-items:center;gap:30px;min-height:52px;padding:15px 26px;border-radius:99px;background:#8DC63F;color:#303133;font-size:15px;font-weight:650;margin-top:8px}
 .speech-button span{font-size:22px}
@@ -407,7 +407,7 @@ body[data-page="treatments"]>header{background:rgba(255,255,255,.96)}
 .speech-refined a:focus-visible,.speech-faq summary:focus-visible{outline:3px solid #00AEEF;outline-offset:5px}
 .speech-hero a:focus-visible{outline-color:#fff}
 @media(max-width:1000px){.speech-wrap{padding-inline:28px}.speech-intro-layout,.speech-practice-layout{gap:45px}.speech-concerns-layout,.speech-question-layout{gap:45px}.speech-area-list li{grid-template-columns:45px 1fr 1.1fr;gap:24px}.speech-area-list h3{font-size:21px}.speech-areas-heading{gap:20px 40px}}
-@media(max-width:700px){.speech-wrap{padding-inline:22px}.speech-section{padding-block:56px}.speech-hero>div{min-height:560px}.speech-hero>div>.speech-hero-content{padding-top:36px;padding-bottom:40px}.speech-breadcrumb{gap:9px;font-size:10px;margin-bottom:32px}.speech-refined .speech-eyebrow{font-size:10px;margin-bottom:20px}.speech-hero h1{font-size:clamp(34px,10.7vw,43px);letter-spacing:-.065em}.speech-refined .speech-hero-line{font-size:24px;line-height:1.55}.speech-refined .speech-hero-copy{font-size:15px}.speech-intro-layout,.speech-concerns-layout,.speech-practice-layout,.speech-question-layout{grid-template-columns:1fr;gap:36px}.speech-refined h2{font-size:30px;line-height:1.45}.speech-refined p{font-size:15px}.speech-photo img{aspect-ratio:6/5}.speech-photo .depth-clip{border-top-right-radius:45px}.speech-photo figcaption{font-size:10px}.speech-text-link{font-size:12px;gap:15px}.speech-concerns-intro{position:static}.speech-refined .speech-context-note{font-size:12px;margin-bottom:0}.speech-observations li{grid-template-columns:23px minmax(0,1fr);gap:17px;padding-block:23px}.speech-observations h3{font-size:18px}.speech-observations p{font-size:14px}.speech-areas-heading{display:block;margin-bottom:30px}.speech-area-list li{grid-template-columns:36px minmax(0,1fr);gap:10px 18px;padding-block:24px}.speech-area-number{font-size:25px;grid-row:1/3}.speech-area-list h3{font-size:21px;margin:0}.speech-area-list p{grid-column:2;font-size:14px;margin:0}.speech-practice .speech-photo img{aspect-ratio:6/5}.speech-practice-points p{font-size:14px}.speech-practice-points h3{font-size:19px}.speech-faq summary{font-size:15px;gap:15px}.speech-faq p{font-size:14px;padding-right:0}.speech-close h2{font-size:32px}.speech-button{font-size:14px;padding-inline:23px}.speech-refined .speech-locations{font-size:11px}}
+@media(max-width:700px){.speech-wrap{padding-inline:22px}.speech-section{padding-block:56px}.speech-hero>div{min-height:390px}.speech-hero>div>.speech-hero-content{padding-top:36px;padding-bottom:40px}.speech-breadcrumb{gap:9px;font-size:10px;margin-bottom:32px}.speech-refined .speech-eyebrow{font-size:10px;margin-bottom:20px}.speech-hero h1{font-size:clamp(34px,10.7vw,43px);letter-spacing:-.065em}.speech-refined .speech-hero-line{font-size:24px;line-height:1.55}.speech-refined .speech-hero-copy{font-size:15px}.speech-intro-layout,.speech-concerns-layout,.speech-practice-layout,.speech-question-layout{grid-template-columns:1fr;gap:36px}.speech-refined h2{font-size:27px;line-height:1.45}.speech-refined p{font-size:15px}.speech-photo img{aspect-ratio:6/5}.speech-photo .depth-clip{border-top-right-radius:45px}.speech-photo figcaption{font-size:10px}.speech-text-link{font-size:12px;gap:15px}.speech-concerns-intro{position:static}.speech-refined .speech-context-note{font-size:12px;margin-bottom:0}.speech-observations li{grid-template-columns:23px minmax(0,1fr);gap:17px;padding-block:23px}.speech-observations h3{font-size:18px}.speech-observations p{font-size:14px}.speech-areas-heading{display:block;margin-bottom:30px}.speech-area-list li{grid-template-columns:36px minmax(0,1fr);gap:10px 18px;padding-block:24px}.speech-area-number{font-size:25px;grid-row:1/3}.speech-area-list h3{font-size:21px;margin:0}.speech-area-list p{grid-column:2;font-size:14px;margin:0}.speech-practice .speech-photo img{aspect-ratio:6/5}.speech-practice-points p{font-size:14px}.speech-practice-points h3{font-size:19px}.speech-faq summary{font-size:15px;gap:15px}.speech-faq p{font-size:14px;padding-right:0}.speech-close h2{font-size:27px}.speech-button{font-size:14px;padding-inline:23px}.speech-refined .speech-locations{font-size:11px}}
 @media(prefers-reduced-motion:reduce){.speech-refined .hero-plane{transform:none!important}}
 /* Keep the scroll reveal while making every visible sentence readable. */
 .speech-refined .list-draw>li{opacity:calc(.88 + var(--on,1) * .12)}
