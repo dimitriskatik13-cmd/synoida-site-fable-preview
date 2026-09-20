@@ -1,6 +1,8 @@
 /* Brand-coloured dots gather into the real logo as its section scrolls in.
-   Geometry is measured only when layout changes. A finite animation catches up
-   with scrolling, then sleeps, including at intermediate scroll positions.
+   Geometry is measured only when layout changes. The animation catches up with
+   scrolling, and while free dots are on screen it keeps drifting gently even
+   with no scroll, so the swarm never looks frozen. It sleeps only when the
+   canvas is off screen, before the dots appear, or once the logo is complete.
    Reduced motion keeps the real logo visible without creating a canvas. */
 (function(){
   var mark=document.querySelector('.cta-mark'), img=mark&&mark.querySelector('img'), band=mark&&mark.closest('section');
@@ -83,7 +85,7 @@
     var count=W<768?Math.min(P.length,800):P.length;
     for(var i=0;i<count;i++){
       var p=P[i],c=ease(clamp((m-p.d*0.36)/0.6)),free=1-c;
-      var sx=p.hx*W+Math.sin(time*0.25+p.ph)*10*p.z*free,sy=p.hy*CH+(1-m)*p.z*140;
+      var sx=p.hx*W+Math.sin(time*0.25+p.ph)*10*p.z*free,sy=p.hy*CH+(1-m)*p.z*140+Math.cos(time*0.21+p.ph*1.7)*7*p.z*free;
       var tx=L+p.tx*MW,ty=T+p.ty*MH,bend=Math.sin(c*Math.PI)*p.sw*W*0.08;
       var x=sx+(tx-sx)*c+bend,y=sy+(ty-sy)*c-Math.abs(bend)*0.3;
       var tw=1-0.3*free*(0.5+0.5*Math.sin(time*1.4+p.ph*3));
@@ -106,7 +108,8 @@
     progress+=(goal-progress)*(1-Math.exp(-dt*2.2));
     if(Math.abs(goal-progress)<0.0015) progress=goal;
     paint(progress);
-    if(progress!==goal) raf=requestAnimationFrame(frame);else last=0;
+    /* keep drifting while free dots are visible; sleep only before they appear or once the logo is complete */
+    if(progress!==goal||(progress>0&&progress<1)) raf=requestAnimationFrame(frame);else last=0;
   }
   function start(){
     if(ready||motion.matches||!img.naturalWidth) return;
